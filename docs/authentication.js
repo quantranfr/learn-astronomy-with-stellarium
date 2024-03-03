@@ -2,7 +2,6 @@
 
 // Function to initialize Netlify Identity
 function initializeNetlifyIdentity() {
-    console.log('init');
     if (window.netlifyIdentity) {
         window.netlifyIdentity.on("init", user => {
             if (!user) {
@@ -10,6 +9,8 @@ function initializeNetlifyIdentity() {
                 window.netlifyIdentity.open();
             }
         });
+        // Trigger Netlify Identity initialization
+        window.netlifyIdentity.init();
     }
 }
 
