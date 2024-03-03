@@ -12,5 +12,23 @@
 <body>
     <!-- Netlify Identity login menu -->
     <div data-netlify-identity-menu></div>
+    
+    <script>
+        // Initialize Netlify Identity
+        if (window.netlifyIdentity) {
+            window.netlifyIdentity.on("init", user => {
+                if (user) {
+                    // If user is already logged in, redirect to main page
+                    window.location.href = "/";
+                }
+            });
+
+            // Listen for login event
+            window.netlifyIdentity.on("login", () => {
+                // After successful login, redirect to main page
+                window.location.href = "/";
+            });
+        }
+    </script>
 </body>
 </html>
