@@ -6,14 +6,14 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <title>References | Học thiên văn qua Stellarium</title>
 <meta name="author" content="Trần Trung Quân">
-<meta name="description" content="Tuttle, Stephen. Distant Nature: Astronomy Exercises. Texas, United States: OER Commons, 2024. https://oercommons.org/authoring/17181-distant-nature-astronomy-exercises/1/view.">
+<meta name="description" content="Tuttle, Stephen. Distant Nature: Astronomy Exercises. Texas, United States: OER Commons, 2016. https://oercommons.org/authoring/17181-distant-nature-astronomy-exercises/1/view.      /* update...">
 <meta name="generator" content="bookdown 0.37 with bs4_book()">
 <meta property="og:title" content="References | Học thiên văn qua Stellarium">
 <meta property="og:type" content="book">
-<meta property="og:description" content="Tuttle, Stephen. Distant Nature: Astronomy Exercises. Texas, United States: OER Commons, 2024. https://oercommons.org/authoring/17181-distant-nature-astronomy-exercises/1/view.">
+<meta property="og:description" content="Tuttle, Stephen. Distant Nature: Astronomy Exercises. Texas, United States: OER Commons, 2016. https://oercommons.org/authoring/17181-distant-nature-astronomy-exercises/1/view.      /* update...">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="References | Học thiên văn qua Stellarium">
-<meta name="twitter:description" content="Tuttle, Stephen. Distant Nature: Astronomy Exercises. Texas, United States: OER Commons, 2024. https://oercommons.org/authoring/17181-distant-nature-astronomy-exercises/1/view.">
+<meta name="twitter:description" content="Tuttle, Stephen. Distant Nature: Astronomy Exercises. Texas, United States: OER Commons, 2016. https://oercommons.org/authoring/17181-distant-nature-astronomy-exercises/1/view.      /* update...">
 <!-- JS --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://kit.fontawesome.com/6ecbd6c532.js" crossorigin="anonymous"></script><script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <link href="libs/bootstrap-4.6.0/bootstrap.min.css" rel="stylesheet">
 <script src="libs/bootstrap-4.6.0/bootstrap.bundle.min.js"></script><script src="libs/bs3compat-0.6.1/transition.js"></script><script src="libs/bs3compat-0.6.1/tabs.js"></script><script src="libs/bs3compat-0.6.1/bs3compat.js"></script><link href="libs/bs4_book-1.0.0/bs4_book.css" rel="stylesheet">
@@ -26,6 +26,7 @@
     div.csl-bib-body { }
     div.csl-entry {
       clear: both;
+          margin-bottom: 0em;
         }
     .hanging div.csl-entry {
       margin-left:2em;
@@ -44,6 +45,7 @@
     }
   </style>
 <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="webex.css">
 </head>
 <body data-spy="scroll" data-target="#toc">
 
@@ -66,6 +68,7 @@
       <nav aria-label="Table of contents"><h2>Table of contents</h2>
         <ul class="book-toc list-unstyled">
 <li><a class="" href="index.html">Giới thiệu</a></li>
+<li><a class="" href="h%E1%BB%87-t%E1%BB%8Da-%C4%91%E1%BB%99-tr%E1%BB%9Di.html"><span class="header-section-number">1</span> Hệ tọa độ trời</a></li>
 <li><a class="active" href="references.html">References</a></li>
 </ul>
 
@@ -78,9 +81,9 @@
 <h1>References<a class="anchor" aria-label="anchor" href="#references"><i class="fas fa-link"></i></a>
 </h1>
 
-<div id="refs" class="references csl-bib-body hanging-indent">
+<div id="refs" class="references csl-bib-body hanging-indent" entry-spacing="0">
 <div id="ref-stuttle" class="csl-entry">
-Tuttle, Stephen. <em>Distant Nature: Astronomy Exercises</em>. Texas, United States: OER Commons, 2024. <a href="https://oercommons.org/authoring/17181-distant-nature-astronomy-exercises/1/view">https://oercommons.org/authoring/17181-distant-nature-astronomy-exercises/1/view</a>.
+Tuttle, Stephen. <em>Distant Nature: Astronomy Exercises</em>. Texas, United States: OER Commons, 2016. <a href="https://oercommons.org/authoring/17181-distant-nature-astronomy-exercises/1/view">https://oercommons.org/authoring/17181-distant-nature-astronomy-exercises/1/view</a>.
 </div>
 </div>
 </div>
@@ -90,8 +93,260 @@ Tuttle, Stephen. <em>Distant Nature: Astronomy Exercises</em>. Texas, United Sta
 
 
 
-  <div class="chapter-nav">
-<div class="prev"><a href="index.html">Giới thiệu</a></div>
+<script>
+
+/* update total correct if #webex-total_correct exists */
+update_total_correct = function() {
+  console.log("webex: update total_correct");
+
+  var t = document.getElementsByClassName("webex-total_correct");
+  for (var i = 0; i < t.length; i++) {
+    p = t[i].parentElement;
+    var correct = p.getElementsByClassName("webex-correct").length;
+    var solvemes = p.getElementsByClassName("webex-solveme").length;
+    var radiogroups = p.getElementsByClassName("webex-radiogroup").length;
+    var selects = p.getElementsByClassName("webex-select").length;
+
+    t[i].innerHTML = correct + " of " + (solvemes + radiogroups + selects) + " correct";
+  }
+}
+
+/* webex-solution button toggling function */
+b_func = function() {
+  console.log("webex: toggle hide");
+
+  var cl = this.parentElement.classList;
+  if (cl.contains('open')) {
+    cl.remove("open");
+  } else {
+    cl.add("open");
+  }
+}
+
+/* check answers */
+check_func = function() {
+  console.log("webex: check answers");
+
+  var cl = this.parentElement.classList;
+  if (cl.contains('unchecked')) {
+    cl.remove("unchecked");
+    this.innerHTML = "Hide Answers";
+  } else {
+    cl.add("unchecked");
+    this.innerHTML = "Show Answers";
+  }
+}
+
+/* function for checking solveme answers */
+solveme_func = function(e) {
+  console.log("webex: check solveme");
+
+  var real_answers = JSON.parse(this.dataset.answer);
+  var my_answer = this.value;
+  var cl = this.classList;
+  if (cl.contains("ignorecase")) {
+    my_answer = my_answer.toLowerCase();
+  }
+  if (cl.contains("nospaces")) {
+    my_answer = my_answer.replace(/ /g, "")
+  }
+
+  if (my_answer == "") {
+    cl.remove("webex-correct");
+    cl.remove("webex-incorrect");
+  } else if (real_answers.includes(my_answer)) {
+    cl.add("webex-correct");
+    cl.remove("webex-incorrect");
+  } else {
+    cl.add("webex-incorrect");
+    cl.remove("webex-correct");
+  }
+
+  // match numeric answers within a specified tolerance
+  if(this.dataset.tol > 0){
+    var tol = JSON.parse(this.dataset.tol);
+    var matches = real_answers.map(x => Math.abs(x - my_answer) < tol)
+    if (matches.reduce((a, b) => a + b, 0) > 0) {
+      cl.add("webex-correct");
+    } else {
+      cl.remove("webex-correct");
+    }
+  }
+
+  // added regex bit
+  if (cl.contains("regex")){
+    answer_regex = RegExp(real_answers.join("|"))
+    if (answer_regex.test(my_answer)) {
+      cl.add("webex-correct");
+    }
+  }
+
+  update_total_correct();
+}
+
+/* function for checking select answers */
+select_func = function(e) {
+  console.log("webex: check select");
+
+  var cl = this.classList
+
+  /* add style */
+  cl.remove("webex-incorrect");
+  cl.remove("webex-correct");
+  if (this.value == "answer") {
+    cl.add("webex-correct");
+  } else if (this.value != "blank") {
+    cl.add("webex-incorrect");
+  }
+
+  update_total_correct();
+}
+
+/* function for checking radiogroups answers */
+radiogroups_func = function(e) {
+  console.log("webex: check radiogroups");
+
+  var checked_button = document.querySelector('input[name=' + this.id + ']:checked');
+  var cl = checked_button.parentElement.classList;
+  var labels = checked_button.parentElement.parentElement.children;
+
+  /* get rid of styles */
+  for (i = 0; i < labels.length; i++) {
+    labels[i].classList.remove("webex-incorrect");
+    labels[i].classList.remove("webex-correct");
+  }
+
+  /* add style */
+  if (checked_button.value == "answer") {
+    cl.add("webex-correct");
+  } else {
+    cl.add("webex-incorrect");
+  }
+
+  update_total_correct();
+}
+
+window.onload = function() {
+  console.log("webex onload");
+  /* set up solution buttons */
+  var buttons = document.getElementsByTagName("button");
+
+  for (var i = 0; i < buttons.length; i++) {
+    if (buttons[i].parentElement.classList.contains('webex-solution')) {
+      buttons[i].onclick = b_func;
+    }
+  }
+
+  var check_sections = document.getElementsByClassName("webex-check");
+  console.log("check:", check_sections.length);
+  for (var i = 0; i < check_sections.length; i++) {
+    check_sections[i].classList.add("unchecked");
+
+    let btn = document.createElement("button");
+    btn.innerHTML = "Show Answers";
+    btn.classList.add("webex-check-button");
+    btn.onclick = check_func;
+    check_sections[i].appendChild(btn);
+
+    let spn = document.createElement("span");
+    spn.classList.add("webex-total_correct");
+    check_sections[i].appendChild(spn);
+  }
+
+  /* set up webex-solveme inputs */
+  var solveme = document.getElementsByClassName("webex-solveme");
+
+  for (var i = 0; i < solveme.length; i++) {
+    /* make sure input boxes don't auto-anything */
+    solveme[i].setAttribute("autocomplete","off");
+    solveme[i].setAttribute("autocorrect", "off");
+    solveme[i].setAttribute("autocapitalize", "off");
+    solveme[i].setAttribute("spellcheck", "false");
+    solveme[i].value = "";
+
+    /* adjust answer for ignorecase or nospaces */
+    var cl = solveme[i].classList;
+    var real_answer = solveme[i].dataset.answer;
+    if (cl.contains("ignorecase")) {
+      real_answer = real_answer.toLowerCase();
+    }
+    if (cl.contains("nospaces")) {
+      real_answer = real_answer.replace(/ /g, "");
+    }
+    solveme[i].dataset.answer = real_answer;
+
+    /* attach checking function */
+    solveme[i].onkeyup = solveme_func;
+    solveme[i].onchange = solveme_func;
+
+    solveme[i].insertAdjacentHTML("afterend", " <span class='webex-icon'></span>")
+  }
+
+  /* set up radiogroups */
+  var radiogroups = document.getElementsByClassName("webex-radiogroup");
+  for (var i = 0; i < radiogroups.length; i++) {
+    radiogroups[i].onchange = radiogroups_func;
+  }
+
+  /* set up selects */
+  var selects = document.getElementsByClassName("webex-select");
+  for (var i = 0; i < selects.length; i++) {
+    selects[i].onchange = select_func;
+    selects[i].insertAdjacentHTML("afterend", " <span class='webex-icon'></span>")
+  }
+
+  update_total_correct();
+}
+
+</script><script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script><script>
+  function checkLoginStatus() {
+    if (!window.netlifyIdentity.currentUser()) {
+      // If user is not logged in, show the modal
+      window.location.href = 'login.html';
+    } else {
+      injectLogoutButton();
+    }
+  }
+  
+  setTimeout(checkLoginStatus, 5000);
+    
+  // Function to create logout button and inject it under .book-extra
+  function injectLogoutButton() {
+    var bookExtra = document.querySelector('#main-nav nav .book-extra');
+    if (bookExtra) {
+      var logoutButton = document.createElement('div');
+      logoutButton.classList.add('book-download');
+      logoutButton.innerHTML = '<button id="logoutButton" class="btn btn-sm btn-outline-danger">Logout</button>';
+      bookExtra.appendChild(logoutButton);
+
+      document.getElementById('logoutButton').addEventListener('click', function () {
+        if (window.netlifyIdentity) {
+          window.netlifyIdentity.logout();
+        } else {
+          console.error('Netlify Identity not initialized yet. Check that it is loaded in your HTML body.');
+        }
+      });
+    }
+    
+    // Remove unnecessary elements
+    var bookSource = document.getElementById('book-source');
+    if (bookSource) {
+      bookSource.remove();
+    }
+    var bookRepo = document.getElementById('book-repo');
+    if (bookRepo) {
+      bookRepo.remove();
+    }
+    var bookEdit = document.getElementById('book-edit');
+    if (bookEdit) {
+      bookEdit.remove();
+    }
+  }
+
+  // Call the function to inject logout button when the page is loaded
+  document.addEventListener('DOMContentLoaded', injectLogoutButton);
+</script><div class="chapter-nav">
+<div class="prev"><a href="h%E1%BB%87-t%E1%BB%8Da-%C4%91%E1%BB%99-tr%E1%BB%9Di.html"><span class="header-section-number">1</span> Hệ tọa độ trời</a></div>
 <div class="empty"></div>
 </div></main><div class="col-md-3 col-lg-2 d-none d-md-block sidebar sidebar-chapter">
     <nav id="toc" data-toggle="toc" aria-label="On this page"><h2>On this page</h2>
@@ -112,7 +367,7 @@ Tuttle, Stephen. <em>Distant Nature: Astronomy Exercises</em>. Texas, United Sta
 <footer class="bg-primary text-light mt-5"><div class="container"><div class="row">
 
   <div class="col-12 col-md-6 mt-3">
-    <p>"<strong>Học thiên văn qua Stellarium</strong>" was written by Trần Trung Quân. It was last built on 2024-03-03.</p>
+    <p>"<strong>Học thiên văn qua Stellarium</strong>" was written by Trần Trung Quân. It was last built on 2024-04-03.</p>
   </div>
 
   <div class="col-12 col-md-6 mt-3">
@@ -120,6 +375,34 @@ Tuttle, Stephen. <em>Distant Nature: Astronomy Exercises</em>. Texas, United Sta
   </div>
 
 </div></div>
-</footer>
+</footer><!-- dynamically load mathjax for compatibility with self-contained --><script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/latest.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script><script type="text/x-mathjax-config">const popovers = document.querySelectorAll('a.footnote-ref[data-toggle="popover"]');
+for (let popover of popovers) {
+  const div = document.createElement('div');
+  div.setAttribute('style', 'position: absolute; top: 0, left:0; width:0, height:0, overflow: hidden; visibility: hidden;');
+  div.innerHTML = popover.getAttribute('data-content');
+
+  var has_math = div.querySelector("span.math");
+  if (has_math) {
+    document.body.appendChild(div);
+    MathJax.Hub.Queue(["Typeset", MathJax.Hub, div]);
+    MathJax.Hub.Queue(function() {
+      popover.setAttribute('data-content', div.innerHTML);
+      document.body.removeChild(div);
+    })
+  }
+}
+</script>
 </body>
 </html>

@@ -1,7 +1,7 @@
 --- 
 title: "Học thiên văn qua Stellarium"
 author: "Trần Trung Quân"
-date: "2024-03-03"
+date: "2024-04-03"
 site: bookdown::bookdown_site
 documentclass: book
 bibliography: [book.bib, packages.bib]

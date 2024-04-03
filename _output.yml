@@ -1,8 +1,15 @@
 bookdown::bs4_book:
-  css: style.css
+  css:
+  - style.css
+  - ./webex.css
   theme:
-    primary: "#1a3674"
+    primary: '#1a3674'
   repo: https://github.com/rstudio/bookdown-demo
+  includes:
+    after_body:
+      - ./webex.js
+      - ./netlify-auth.js
+  md_extensions: -smart
 bookdown::pdf_book:
   includes:
     in_header: preamble.tex
@@ -10,3 +17,8 @@ bookdown::pdf_book:
   citation_package: natbib
   keep_tex: yes
 bookdown::epub_book: default
+rmd_files:
+  html_document: default
+  login.Rmd:
+    output: login.html
+    rmd_output_format: html_document
