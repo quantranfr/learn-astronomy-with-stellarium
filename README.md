@@ -1,12 +1,29 @@
-Welcome! 
+## Giới thiệu
 
-This is a minimal example of a book based on R Markdown and **bookdown** (https://github.com/rstudio/bookdown). 
+Quyển sách này được viết bằng R Markdown trên nền tảng **bookdown** (https://github.com/rstudio/bookdown).
 
-This template provides a skeleton file structure that you can edit to create your book. 
+Người dùng cần đăng nhập để xem nội dung. Netlify phụ trách auth.
 
-The contents inside the .Rmd files provide some pointers to help you get started, but feel free to also delete the content in each file and start fresh.
+Đây là một cuốn sách tương tác. Người đọc có thể tự kiểm tra kết quả khi trả lời các câu hỏi trong sách.
 
-Additional resources:
+Điều này làm được là nhờ package webexercices. Sau đây là lệnh cài đặt ban đầu (KHÔNG CHẠY LẠI LỆNH NÀY):
+
+``` {r}
+webexercises::add_to_bookdown(bookdown_dir = ".",
+  include_dir = "",
+  script_dir = "",
+  output_format = "bs4_book")
+```
+
+## Cài đặt
+
+Một số packages (có thể) cần cài: downlit, tinytex, servr, usethis, learnr (?), webexercises
+
+## Build
+
+Copy file *login.html* vào thư mục output (*docs*).
+
+## Additional resources:
 
 The **bookdown** book: https://bookdown.org/yihui/bookdown/
 

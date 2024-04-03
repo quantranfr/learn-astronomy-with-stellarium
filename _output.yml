@@ -17,8 +17,3 @@ bookdown::pdf_book:
   citation_package: natbib
   keep_tex: yes
 bookdown::epub_book: default
-rmd_files:
-  html_document: default
-  login.Rmd:
-    output: login.html
-    rmd_output_format: html_document

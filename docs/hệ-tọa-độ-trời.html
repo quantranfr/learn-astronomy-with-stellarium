@@ -203,8 +203,8 @@ của Formalhaut.</p>
 <p><strong>R</strong>. Chọn Mặt Trời và đặt vào giữa màn hình. Do ta đang ở xấp xỉ thời điểm Xuân phân, Mặt trời gần như ở giao điểm của hai đường quan trọng trên bầu trời.</p>
 <blockquote>
 <strong>Câu hỏi 14</strong>. Hai đường đó là?
-<div id="radio_AEOATRMXLN" class="webex-radiogroup">
-<label><input type="radio" autocomplete="off" name="radio_AEOATRMXLN" value=""><span>đường thẳng (<em>Straight</em>) và đường chéo (<em>Diagonal</em>)</span></label><label><input type="radio" autocomplete="off" name="radio_AEOATRMXLN" value=""><span>kinh tuyến trời (<em>Meridian</em>) và đường chân trời (<em>Horizon</em>)</span></label><label><input type="radio" autocomplete="off" name="radio_AEOATRMXLN" value="answer"><span>xích đạo trời (<em>Celestial equator</em>) và hoàng đạo (<em>Ecliptic</em>)</span></label><label><input type="radio" autocomplete="off" name="radio_AEOATRMXLN" value=""><span>xích đạo trời (<em>Celestial equator</em>) và kinh tuyến trời (<em>Meridian</em>)</span></label>
+<div id="radio_YQWBACMJTW" class="webex-radiogroup">
+<label><input type="radio" autocomplete="off" name="radio_YQWBACMJTW" value=""><span>đường thẳng (<em>Straight</em>) và đường chéo (<em>Diagonal</em>)</span></label><label><input type="radio" autocomplete="off" name="radio_YQWBACMJTW" value=""><span>kinh tuyến trời (<em>Meridian</em>) và đường chân trời (<em>Horizon</em>)</span></label><label><input type="radio" autocomplete="off" name="radio_YQWBACMJTW" value="answer"><span>xích đạo trời (<em>Celestial equator</em>) và hoàng đạo (<em>Ecliptic</em>)</span></label><label><input type="radio" autocomplete="off" name="radio_YQWBACMJTW" value=""><span>xích đạo trời (<em>Celestial equator</em>) và kinh tuyến trời (<em>Meridian</em>)</span></label>
 </div>
 </blockquote>
 <blockquote>
@@ -453,28 +453,27 @@ window.onload = function() {
   function stopTimer() {
     clearTimeout(myTimer);
   }
-  
-  startTimer();
     
   // Function to create logout button and inject it under .book-extra
   function injectLogoutButton() {
     var bookExtra = document.querySelector('#main-nav nav .book-extra');
     if (bookExtra) {
       var logoutButton = document.createElement('div');
-      logoutButton.classList.add('book-download');
-      logoutButton.innerHTML = '<button id="logoutButton" class="btn btn-sm btn-outline-danger">Logout</button>';
+      logoutButton.innerHTML = '<button id="logoutButton" class="btn btn-sm btn-outline-danger">Đăng xuất</button>';
       bookExtra.appendChild(logoutButton);
 
       document.getElementById('logoutButton').addEventListener('click', function () {
         if (window.netlifyIdentity) {
           window.netlifyIdentity.logout();
-          startTimer();
+          checkLoginStatus();
         } else {
           console.error('Netlify Identity not initialized yet. Check that it is loaded in your HTML body.');
         }
       });
     }
-    
+  }
+
+  function removeElements() {
     // Remove unnecessary elements
     var bookSource = document.getElementById('book-source');
     if (bookSource) {
@@ -489,6 +488,13 @@ window.onload = function() {
       bookEdit.remove();
     }
   }
+
+  // Call the function to check login status when the page is loaded or shown
+  window.addEventListener('pageshow', function() {
+    removeElements();
+    startTimer();
+  });
+
 </script><div class="chapter-nav">
 <div class="prev"><a href="index.html">Giới thiệu</a></div>
 <div class="next"><a href="references.html">References</a></div>
