@@ -203,8 +203,8 @@ của Formalhaut.</p>
 <p><strong>R</strong>. Chọn Mặt Trời và đặt vào giữa màn hình. Do ta đang ở xấp xỉ thời điểm Xuân phân, Mặt trời gần như ở giao điểm của hai đường quan trọng trên bầu trời.</p>
 <blockquote>
 <strong>Câu hỏi 14</strong>. Hai đường đó là?
-<div id="radio_AYEYJNXTKE" class="webex-radiogroup">
-<label><input type="radio" autocomplete="off" name="radio_AYEYJNXTKE" value=""><span>đường thẳng (<em>Straight</em>) và đường chéo (<em>Diagonal</em>)</span></label><label><input type="radio" autocomplete="off" name="radio_AYEYJNXTKE" value=""><span>kinh tuyến trời (<em>Meridian</em>) và đường chân trời (<em>Horizon</em>)</span></label><label><input type="radio" autocomplete="off" name="radio_AYEYJNXTKE" value="answer"><span>xích đạo trời (<em>Celestial equator</em>) và hoàng đạo (<em>Ecliptic</em>)</span></label><label><input type="radio" autocomplete="off" name="radio_AYEYJNXTKE" value=""><span>xích đạo trời (<em>Celestial equator</em>) và kinh tuyến trời (<em>Meridian</em>)</span></label>
+<div id="radio_IOQAKYUMOS" class="webex-radiogroup">
+<label><input type="radio" autocomplete="off" name="radio_IOQAKYUMOS" value=""><span>đường thẳng (<em>Straight</em>) và đường chéo (<em>Diagonal</em>)</span></label><label><input type="radio" autocomplete="off" name="radio_IOQAKYUMOS" value=""><span>kinh tuyến trời (<em>Meridian</em>) và đường chân trời (<em>Horizon</em>)</span></label><label><input type="radio" autocomplete="off" name="radio_IOQAKYUMOS" value="answer"><span>xích đạo trời (<em>Celestial equator</em>) và hoàng đạo (<em>Ecliptic</em>)</span></label><label><input type="radio" autocomplete="off" name="radio_IOQAKYUMOS" value=""><span>xích đạo trời (<em>Celestial equator</em>) và kinh tuyến trời (<em>Meridian</em>)</span></label>
 </div>
 </blockquote>
 <blockquote>
@@ -434,16 +434,19 @@ window.onload = function() {
 }
 
 </script><script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script><script>
+  var myTimer;
+  
   function checkLoginStatus() {
     if (!window.netlifyIdentity.currentUser()) {
       // If user is not logged in, show the modal
       window.location.href = 'login.html';
     } else {
       injectLogoutButton();
+      clearTimeout(myTimer);
     }
   }
   
-  setTimeout(checkLoginStatus, 5000);
+  myTimer = setTimeout(checkLoginStatus, 5000);
     
   // Function to create logout button and inject it under .book-extra
   function injectLogoutButton() {
@@ -477,9 +480,6 @@ window.onload = function() {
       bookEdit.remove();
     }
   }
-
-  // Call the function to inject logout button when the page is loaded
-  document.addEventListener('DOMContentLoaded', injectLogoutButton);
 </script><div class="chapter-nav">
 <div class="prev"><a href="index.html">Giới thiệu</a></div>
 <div class="next"><a href="references.html">References</a></div>

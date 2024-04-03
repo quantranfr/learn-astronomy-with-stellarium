@@ -1,15 +1,18 @@
 <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 <script>
+  var myTimer;
+  
   function checkLoginStatus() {
     if (!window.netlifyIdentity.currentUser()) {
       // If user is not logged in, show the modal
       window.location.href = 'login.html';
     } else {
       injectLogoutButton();
+      clearTimeout(myTimer);
     }
   }
   
-  setTimeout(checkLoginStatus, 5000);
+  myTimer = setTimeout(checkLoginStatus, 5000);
     
   // Function to create logout button and inject it under .book-extra
   function injectLogoutButton() {
@@ -43,7 +46,4 @@
       bookEdit.remove();
     }
   }
-
-  // Call the function to inject logout button when the page is loaded
-  document.addEventListener('DOMContentLoaded', injectLogoutButton);
 </script>

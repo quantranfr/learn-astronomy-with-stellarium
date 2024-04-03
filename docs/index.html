@@ -297,16 +297,19 @@ window.onload = function() {
 }
 
 </script><script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script><script>
+  var myTimer;
+  
   function checkLoginStatus() {
     if (!window.netlifyIdentity.currentUser()) {
       // If user is not logged in, show the modal
       window.location.href = 'login.html';
     } else {
       injectLogoutButton();
+      clearTimeout(myTimer);
     }
   }
   
-  setTimeout(checkLoginStatus, 5000);
+  myTimer = setTimeout(checkLoginStatus, 5000);
     
   // Function to create logout button and inject it under .book-extra
   function injectLogoutButton() {
@@ -340,9 +343,6 @@ window.onload = function() {
       bookEdit.remove();
     }
   }
-
-  // Call the function to inject logout button when the page is loaded
-  document.addEventListener('DOMContentLoaded', injectLogoutButton);
 </script><div class="chapter-nav">
 <div class="empty"></div>
 <div class="next"><a href="h%E1%BB%87-t%E1%BB%8Da-%C4%91%E1%BB%99-tr%E1%BB%9Di.html"><span class="header-section-number">1</span> Hệ tọa độ trời</a></div>
