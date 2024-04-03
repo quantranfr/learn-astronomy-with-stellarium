@@ -8,11 +8,19 @@
       window.location.href = 'login.html';
     } else {
       injectLogoutButton();
-      clearTimeout(myTimer);
+      stopTimer();
     }
   }
   
-  myTimer = setTimeout(checkLoginStatus, 5000);
+  function startTimer() {
+    myTimer = setTimeout(checkLoginStatus, 5000);
+  }
+  
+  function stopTimer() {
+    clearTimeout(myTimer);
+  }
+  
+  startTimer();
     
   // Function to create logout button and inject it under .book-extra
   function injectLogoutButton() {
@@ -26,6 +34,7 @@
       document.getElementById('logoutButton').addEventListener('click', function () {
         if (window.netlifyIdentity) {
           window.netlifyIdentity.logout();
+          startTimer();
         } else {
           console.error('Netlify Identity not initialized yet. Check that it is loaded in your HTML body.');
         }
