@@ -31,7 +31,8 @@
       document.getElementById('logoutButton').addEventListener('click', function () {
         if (window.netlifyIdentity) {
           window.netlifyIdentity.logout();
-          startTimer(500);
+          startTimer(1000);
+          logoutButton.remove();
         } else {
           console.error('Netlify Identity not initialized yet. Check that it is loaded in your HTML body.');
         }
