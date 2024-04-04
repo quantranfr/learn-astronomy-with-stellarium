@@ -12,8 +12,8 @@
     }
   }
   
-  function startTimer() {
-    myTimer = setTimeout(checkLoginStatus, 5000);
+  function startTimer(delay) {
+    myTimer = setTimeout(checkLoginStatus, delay);
   }
   
   function stopTimer() {
@@ -31,7 +31,7 @@
       document.getElementById('logoutButton').addEventListener('click', function () {
         if (window.netlifyIdentity) {
           window.netlifyIdentity.logout();
-          window.location.href = 'login.html';
+          startTimer(500);
         } else {
           console.error('Netlify Identity not initialized yet. Check that it is loaded in your HTML body.');
         }
@@ -58,7 +58,7 @@
   // Call the function to check login status when the page is loaded or shown
   window.addEventListener('pageshow', function() {
     removeElements();
-    startTimer();
+    startTimer(5000);
   });
 
 </script>
