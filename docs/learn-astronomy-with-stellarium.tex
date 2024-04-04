@@ -69,7 +69,7 @@
 \fi
 \usepackage[]{natbib}
 \bibliographystyle{apalike}
-\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
+\usepackage{bookmark}
 \IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
 \urlstyle{same}
 \hypersetup{
@@ -80,7 +80,7 @@
 
 \title{Học thiên văn qua Stellarium}
 \author{Trần Trung Quân}
-\date{2024-03-04}
+\date{2024-04-05}
 
 \begin{document}
 \maketitle
@@ -89,19 +89,20 @@
 \setcounter{tocdepth}{1}
 \tableofcontents
 }
-\hypertarget{giux1edbi-thiux1ec7u}{%
-\chapter*{Giới thiệu}\label{giux1edbi-thiux1ec7u}}
+\chapter*{Giới thiệu}\label{giux1edbi-thiux1ec7u}
 \addcontentsline{toc}{chapter}{Giới thiệu}
 
-Với những đặc thù của mình, thiên văn học là một ngành không dễ để \emph{học chay}, trong khi \emph{học qua thực hành} (learning by doing) một cách truyền thống - tức ngắm trời sao - lại gặp một số trở ngại không dễ vượt qua như địa điểm, thời tiết, thời gian, thiết bị\ldots{} Do vậy, tôi tạo ra khóa học này với mong muốn ai ai cũng có thể thực hành thiên văn học ở một mức độ nào đó, và tiếp thu được các kiến thức cơ bản về thiên văn học một cách dễ dàng nhất.
+Với những đặc thù của mình, thiên văn học là một ngành không dễ để \emph{học chay}, trong khi \emph{học qua thực hành} (learning by doing) một cách truyền thống - tức ngắm trời sao - lại gặp một số trở ngại không dễ vượt qua như địa điểm, thời tiết, thời gian, thiết bị\ldots{} Do vậy, khóa học này được tạo ra với mong muốn ai cũng có thể thực hành thiên văn học và tiếp thu được các kiến thức cơ bản về thiên văn học một cách dễ dàng nhất.
 
 Phần lớn nội dung trong khóa học này được lấy cảm hứng từ tài liệu của Stephen Tuttle \citep{stuttle} trên trang OER Commons.
 
-\hypertarget{hux1ec7-tux1ecda-ux111ux1ed9-trux1eddi}{%
-\chapter{Hệ tọa độ trời}\label{hux1ec7-tux1ecda-ux111ux1ed9-trux1eddi}}
+\chapter{Hệ tọa độ trời}\label{hux1ec7-tux1ecda-ux111ux1ed9-trux1eddi}
 
-\hypertarget{luxfd-thuyux1ebft}{%
-\section{Lý thuyết}\label{luxfd-thuyux1ebft}}
+\section{Mục tiêu}\label{mux1ee5c-tiuxeau}
+
+Hình dung được và cảm thấy tự tin khi sử dụng các hệ tọa độ trời để nói về vị trí của các thiên thể.
+
+\section{Lý thuyết}\label{luxfd-thuyux1ebft}
 
 Đọc phần mở đầu của trang wiki về
 \href{https://vi.wikipedia.org/wiki/H\%E1\%BB\%87_t\%E1\%BB\%8Da_\%C4\%91\%E1\%BB\%99_thi\%C3\%AAn_v\%C4\%83n}{Hệ tọa độ thiên văn}.
@@ -124,8 +125,7 @@ Xích kinh & Right Ascension & \(\alpha\) \\
 Xích vĩ & Declination & \(\delta\) \\
 \end{longtable}
 
-\hypertarget{thux1ef1c-huxe0nh}{%
-\section{Thực hành}\label{thux1ef1c-huxe0nh}}
+\section{Thực hành}\label{thux1ef1c-huxe0nh}
 
 \textbf{A}. Khởi động Stellarium.
 
@@ -168,6 +168,8 @@ TRUE / FALSE
 
 \textbf{H}. Chỉnh lại ngày giờ thành 20/3/2024, 12h30pm
 
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
 \textbf{I}. Quay góc nhìn về đường chân trời phía Bắc (\emph{N}).
 
 \textbf{J}. Để ý rằng sao Bắc Cực (\emph{Polaris}) rất gần với kinh tuyến trời.
@@ -183,6 +185,8 @@ và có cao độ là bao nhiêu (làm tròn đến 1º)?
 \textbf{Câu hỏi 9}. Ta có thể nhìn thấy Merak và ngôi sao vừa rồi vào ngày giờ lúc đó không?
 TRUE / FALSE
 \end{quote}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
 
 \textbf{L}. Chỉnh trường nhìn về khoảng 60º.
 
@@ -204,6 +208,7 @@ của Formalhaut.
 \end{quote}
 
 \begin{itemize}
+\tightlist
 \item
   \begin{enumerate}
   \def\labelenumi{(\Alph{enumi})}
@@ -247,6 +252,8 @@ TRUE / FALSE
 TRUE / FALSE
 \end{quote}
 
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
 \textbf{P}. Chỉnh ngày giờ về 20/3/2024 lúc 10h05'.
 
 \textbf{Q}. Thời điểm này được chọn là do nó xấp xỉ với (thời điểm) Xuân phân (\emph{Vernal Equinox}) của năm 2024. Xích kinh (đo bằng giờ-phút-giây) được tính bắt đầu từ một điểm đặc biệt trên bầu trời, gọi là Điểm (xuân) phân (trong tiếng Anh cũng gọi là \emph{Vernal Equinox}).
@@ -258,6 +265,7 @@ TRUE / FALSE
 \end{quote}
 
 \begin{itemize}
+\tightlist
 \item
   \begin{enumerate}
   \def\labelenumi{(\Alph{enumi})}
@@ -298,6 +306,8 @@ TRUE / FALSE
 \_ s
 \end{quote}
 
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
 \textbf{S}. Giờ đây bạn đã sử dụng cả hai hệ tọa độ (chân trời và xích đạo). Hãy trả lời các câu hỏi sau:
 
 \begin{quote}
@@ -305,6 +315,7 @@ TRUE / FALSE
 \end{quote}
 
 \begin{itemize}
+\tightlist
 \item
   \begin{enumerate}
   \def\labelenumi{(\Alph{enumi})}
@@ -327,6 +338,7 @@ TRUE / FALSE
 \end{quote}
 
 \begin{itemize}
+\tightlist
 \item
   \begin{enumerate}
   \def\labelenumi{(\Alph{enumi})}
@@ -351,6 +363,177 @@ TRUE / FALSE
     Còn tùy
   \end{enumerate}
 \end{itemize}
+
+\chapter{Quan sát Sao Thủy và Sao Kim}\label{quan-suxe1t-sao-thux1ee7y-vuxe0-sao-kim}
+
+\section{Mục tiêu}\label{mux1ee5c-tiuxeau-1}
+
+Sao Thủy và Sao Kim là những đối tượng quan sát thường xuyên xuất hiện trong các sự kiện ngắm sao. Qua bài thực hành này, học viên sẽ hiểu hơn về khái niệm \emph{ly giác cực đại}, biết cách xác định thời điểm quan sát lý tưởng nhất hai hành tinh trên và biết cách giải thích vị trí tương đối của chúng trên bầu trời. Học viên cũng sẽ biết cách sử dụng công cụ đo góc trong Stellarium.
+
+\section{Lý thuyết}\label{luxfd-thuyux1ebft-1}
+
+Đọc phần mở đầu của trang wiki về \href{https://vi.wikipedia.org/wiki/Ly_gi\%C3\%A1c_(thi\%C3\%AAn_v\%C4\%83n_h\%E1\%BB\%8Dc)}{Ly giác}
+
+\section{Thực hành}\label{thux1ef1c-huxe0nh-1}
+
+\textbf{A}. Khởi động Stellarium.
+
+\textbf{B}. Thiết lập vị trí (\emph{Location}): ``Qui Nhon''.
+
+\textbf{C}. Thiết lập ngày giờ: 10/3/2024, 10am (giờ địa phương). Đặt thanh thời gian về phía trên bên phải màn hình.
+
+\textbf{D}. Tắt hiển thị khí quyển (\emph{Atmosphere}).
+
+\textbf{E}. Tắt hiển thị các ngôi sao (mở menu \emph{Sky and view options}, tab \emph{Sky}, bỏ chọn ô \emph{Stars}).
+
+\textbf{F}. Chọn tâm điểm là Mặt Trời (menu \emph{Search}, gõ \emph{Sun}, hoặc click vào Mặt Trời và gõ dấu cách).
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\textbf{G}. Tăng thời gian từng ngày một để tìm ly giác cực đại (\emph{maximum elongation}) của Sao Thủy (\emph{Mercury}). Điền ngày vào Bảng \ref{tab:elongation}.
+
+\textbf{H}. Dùng công cụ Thước đo góc (cần kích hoạt plugin \emph{Angle Measure} trong menu \emph{Configuration}, tab \emph{Plugins}) để đo khoảng cách góc giữa Mặt Trời và Sao Thủy (rê chuột) và điền vào bảng \ref{tab:elongation} (± 1º).
+
+\textbf{I}. Tiếp tục tăng ngày cho đến khi Sao Thủy lại đạt ly giác cực đại một lần nữa, ở phía bên kia Mặt Trời. Ghi lại ngày và ly giác.
+
+\textbf{J}. Tăng tháng và điều chỉnh ngày cho đến khi Sao Kim (\emph{Venus}) đạt ly giác cực đại ở từng phía của Mặt Trời. Ghi lại như trên.
+
+\begin{longtable}[]{@{}llllll@{}}
+\caption{\label{tab:elongation} Các sự kiện ly giác cực đại}\tabularnewline
+\toprule\noalign{}
+Hành tinh & Hướng cực đại & Năm & Tháng & Ngày & Ly giác \\
+\midrule\noalign{}
+\endfirsthead
+\toprule\noalign{}
+Hành tinh & Hướng cực đại & Năm & Tháng & Ngày & Ly giác \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+Sao Thủy & Đông & 2024 & 3 & \_\_ & \_\_º \\
+Sao Thủy & Tây & 2024 & \_ & \_\_ & \_\_º \\
+Sao Kim & Đông & \_\_\_\_ & \_ & & \_\_º \\
+Sao Kim & Tây & \_\_\_\_ & \_ & & \_\_º \\
+\end{longtable}
+
+\begin{quote}
+\textbf{Câu hỏi 1}. Bạn có nhận xét gì về mối quan hệ giữa các góc vừa đo được?
+\end{quote}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\textbf{K}. Vào trang \href{https://in-the-sky.org/newsindex.php?feed=innerplanets&year=2024&month=3&day=10&town=1568574}{in-the-sky.org} để kiểm chứng những kết quả vừa tìm được.
+
+\begin{quote}
+\textbf{Câu hỏi 2}. Dựa vào trang web nêu trên, cho biết ngày Sao Thủy/Sao Kim đạt ly giác cực đại có trùng với ngày chúng xuất hiện ở vị trí cao nhất phía trên đường chân trời hay không.
+\end{quote}
+
+\chapter{Định luật thứ 3 của Kepler}\label{ux111ux1ecbnh-luux1eadt-thux1ee9-3-cux1ee7a-kepler}
+
+\section{Mục tiêu}\label{mux1ee5c-tiuxeau-2}
+
+Mục tiêu đầu tiên của bài thực hành này là biết sử dụng Stellarium để quan sát được toàn bộ Hệ Mặt Trời ``từ trên cao''. Làm vậy sẽ giúp người thực hành có được hình dung chính xác về các quỹ đạo và chuyển động trong Hệ Mặt Trời. Nguyên do là trong các tài liệu phổ biến khoa học, các kích thước thường không được thể hiện đúng tỷ lệ.
+
+Mục tiêu thứ hai là hiểu công thức và ghi nhớ Định luật thứ 3 của Kepler thông qua hoạt động tính toán kiểm chứng. Đây cũng là dịp để người thực hành tư duy về quá trình tìm ra các định luật trong tự nhiên.
+
+\section{Lý thuyết}\label{luxfd-thuyux1ebft-2}
+
+Đọc trang wiki \href{https://vi.wikipedia.org/wiki/C\%C3\%A1c_\%C4\%91\%E1\%BB\%8Bnh_lu\%E1\%BA\%ADt_Kepler_v\%E1\%BB\%81_chuy\%E1\%BB\%83n_\%C4\%91\%E1\%BB\%99ng_thi\%C3\%AAn_th\%E1\%BB\%83}{Các định luật của Kepler về chuyển động thiên thể}, có thể bỏ qua các công thức.
+
+\section{Thực hành}\label{thux1ef1c-huxe0nh-2}
+
+\textbf{A}. Khởi động Stellarium.
+
+\textbf{B}. Thiết lập vị trí (\emph{Location}): ``Qui Nhon''. Quay góc nhìn về đường chân trời phía Nam (\emph{S}).
+
+\textbf{C}. Cho thời gian dừng chạy. Thiết lập ngày giờ: 1/1/2024, 6am (giờ địa phương). Đặt thanh thời gian về phía trên bên phải màn hình.
+
+\textbf{D}. Tắt hiển thị mặt đất (\emph{Ground}) và khí quyển (\emph{Atmosphere}). Hiển thị quỹ đạo của các hành tinh (menu \emph{Sky and view options}, tab \emph{SSO}, check \emph{Show orbits} + tìm hiểu ý nghĩa của các checkbox gần đó).
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\textbf{E}. Nhìn tổng thể Hệ Mặt Trời (menu \emph{Location}, chọn \emph{Planet} là \emph{Solar System Observer}).
+
+\textbf{F}. Đảm bảo rằng bạn đang nhìn thấy cực Bắc của Mặt Trời (menu \emph{Search}, gõ \emph{Sun}, bấm hết cỡ tổ hợp Alt + ↑ rồi bấm hết cỡ ↓).
+
+\textbf{G}. Phóng to cho đến khi trường nhìn (\emph{FOV}) còn khoảng 3-4º. Ta sẽ thấy được các ``hành tinh vòng trong'' (chấm trắng + tên phía trên bên phải).
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\textbf{H}. Tăng thời gian sao cho Sao Kim (\emph{Mercury}) đi được một vòng và điền vào cột \emph{P (ngày)} trong Bảng \ref{tab:kepler} (± 1 ngày).
+
+\textbf{I}. Chỉnh lại ngày giờ về 1/1/2024, 6am. Làm tương tự cho Sao Thủy (\emph{Venus}).
+
+\textbf{J}. Phóng to trường nhìn lên khoảng 4-5º. Chỉnh lại ngày giờ về 1/1/2024, 6am. Làm tương tự cho Sao Hỏa (\emph{Mars}) (± 1 tháng).
+
+\textbf{J}. Phóng to trường nhìn lên khoảng 17-20º. Chỉnh lại ngày giờ về 1/1/2024, 6am. Làm tương tự cho Sao Mộc (\emph{Jupiter}) và Sao Thổ (\emph{Saturn}) (± một vài tháng).
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 12\tabcolsep) * \real{0.1800}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 12\tabcolsep) * \real{0.1600}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 12\tabcolsep) * \real{0.1400}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 12\tabcolsep) * \real{0.1000}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 12\tabcolsep) * \real{0.1000}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 12\tabcolsep) * \real{0.1800}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 12\tabcolsep) * \real{0.1400}}@{}}
+\caption{\label{tab:kepler} Bảng tổng hợp}\tabularnewline
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Hành tinh
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+P (ngày)
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+P (năm)
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+\(P^2\)
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+a (A.U.)
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+a thực tế (A.U.)
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Sai số (\%)
+\end{minipage} \\
+\midrule\noalign{}
+\endfirsthead
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Hành tinh
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+P (ngày)
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+P (năm)
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+\(P^2\)
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+a (A.U.)
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+a thực tế (A.U.)
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Sai số (\%)
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+Sao Thủy & \_\_ & \_\_\_\_ & & \_\_\_\_\_ & 0.387 & \_\_\_\_ \\
+Sao Kim & \_\_\_\_\_ & & & \_\_\_\_\_ & 0.723 & \_\_\_\_ \\
+Trái Đất & 365.24 & 1 & 1 & 1 & 1 & 0 \\
+Sao Hỏa & - & \_\_\_\_ & & \_\_\_\_\_ & 1.523 & \_\_\_\_ \\
+Sao Mộc & - & \_\_\_\_\_ & & \_\_\_\_\_ & 5.204 & \_\_\_\_ \\
+Sao Thổ & - & \_\_\_\_\_ & & \_\_\_\_\_ & 9.582 & \_\_\_\_ \\
+\end{longtable}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\textbf{K}. Điền vào cột \emph{P (năm)} (nếu chưa điền) bằng cách chia chu kỳ theo ngày cho 365.25.
+
+\textbf{L}. Tính \(P^2\) từ cột \emph{P (năm)}.
+
+\textbf{M}. Tính các bán trục lớn \emph{a} dựa theo công thức \(P^2 = a^3\)
+
+\textbf{O}. Tính sai số so với dữ liệu chuẩn dựa theo công thức
+
+{[}(giá trị tính được) - (giá trị thực tế){]}/(giá trị thực tế) x 100\%
 
   \bibliography{book.bib,packages.bib}
 

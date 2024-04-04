@@ -1,0 +1,50 @@
+# Quan sát Sao Thủy và Sao Kim
+
+## Mục tiêu
+
+Sao Thủy và Sao Kim là những đối tượng quan sát thường xuyên xuất hiện trong các sự kiện ngắm sao. Qua bài thực hành này, học viên sẽ hiểu hơn về khái niệm *ly giác cực đại*, biết cách xác định thời điểm quan sát lý tưởng nhất hai hành tinh trên và biết cách giải thích vị trí tương đối của chúng trên bầu trời. Học viên cũng sẽ biết cách sử dụng công cụ đo góc trong Stellarium.
+
+## Lý thuyết
+
+Đọc phần mở đầu của trang wiki về [Ly giác](https://vi.wikipedia.org/wiki/Ly_gi%C3%A1c_(thi%C3%AAn_v%C4%83n_h%E1%BB%8Dc))
+
+## Thực hành
+
+**A**. Khởi động Stellarium.
+
+**B**. Thiết lập vị trí (_Location_): "Qui Nhon".
+
+**C**. Thiết lập ngày giờ: 10/3/2024, 10am (giờ địa phương). Đặt thanh thời gian về phía trên bên phải màn hình.
+
+**D**. Tắt hiển thị khí quyển (_Atmosphere_).
+
+**E**. Tắt hiển thị các ngôi sao (mở menu *Sky and view options*, tab *Sky*, bỏ chọn ô *Stars*).
+
+**F**. Chọn tâm điểm là Mặt Trời (menu *Search*, gõ *Sun*, hoặc click vào Mặt Trời và gõ dấu cách).
+
+---
+
+**G**. Tăng thời gian từng ngày một để tìm ly giác cực đại (*maximum elongation*) của Sao Thủy (*Mercury*). Điền ngày vào Bảng \@ref(tab:elongation).
+
+**H**. Dùng công cụ Thước đo góc (cần kích hoạt plugin *Angle Measure* trong menu *Configuration*, tab *Plugins*) để đo khoảng cách góc giữa Mặt Trời và Sao Thủy (rê chuột) và điền vào bảng \@ref(tab:elongation) (± 1º).
+
+**I**. Tiếp tục tăng ngày cho đến khi Sao Thủy lại đạt ly giác cực đại một lần nữa, ở phía bên kia Mặt Trời. Ghi lại ngày và ly giác.
+
+**J**. Tăng tháng và điều chỉnh ngày cho đến khi Sao Kim (*Venus*) đạt ly giác cực đại ở từng phía của Mặt Trời. Ghi lại như trên.
+
+| Hành tinh | Hướng cực đại | Năm | Tháng | Ngày | Ly giác |
+| --- | ----- | --- | --- | --- | --- |
+| Sao Thủy | Đông | 2024  | 3 | `r fitb(25, tol=2)` | `r fitb(19, tol=3)`º |
+| Sao Thủy | Tây | 2024  | `r fitb(5)` | `r fitb(10, tol=3)` | `r fitb(26, tol=3)`º |
+| Sao Kim | Đông | `r fitb(2025)`  | `r fitb(1)` | | `r fitb(47, tol=3)`º |
+| Sao Kim | Tây | `r fitb(2025)`  | `r fitb(6, tol=2)` | | `r fitb(46, tol=3)`º |
+
+: (\#tab:elongation) Các sự kiện ly giác cực đại
+
+> **Câu hỏi 1**. Bạn có nhận xét gì về mối quan hệ giữa các góc vừa đo được?
+
+---
+
+**K**. Vào trang [in-the-sky.org](https://in-the-sky.org/newsindex.php?feed=innerplanets&year=2024&month=3&day=10&town=1568574) để kiểm chứng những kết quả vừa tìm được.
+
+> **Câu hỏi 2**. Dựa vào trang web nêu trên, cho biết ngày Sao Thủy/Sao Kim đạt ly giác cực đại có trùng với ngày chúng xuất hiện ở vị trí cao nhất phía trên đường chân trời hay không.

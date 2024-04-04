@@ -5,7 +5,7 @@
   function checkLoginStatus() {
     if (!window.netlifyIdentity.currentUser()) {
       // If user is not logged in, show the modal
-      window.location.href = 'login.html';
+      // window.location.href = 'login.html';
     } else {
       injectLogoutButton();
       stopTimer();

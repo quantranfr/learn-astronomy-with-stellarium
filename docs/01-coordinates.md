@@ -1,5 +1,9 @@
 # Hệ tọa độ trời
 
+## Mục tiêu
+
+Hình dung được và cảm thấy tự tin khi sử dụng các hệ tọa độ trời để nói về vị trí của các thiên thể.
+
 ## Lý thuyết
 
 Đọc phần mở đầu của trang wiki về
@@ -57,6 +61,8 @@ Trong khi đọc, chú ý đến các khái niệm sau:
 
 **H**. Chỉnh lại ngày giờ thành 20/3/2024, 12h30pm
 
+---
+
 **I**. Quay góc nhìn về đường chân trời phía Bắc (_N_).
 
 **J**. Để ý rằng sao Bắc Cực (_Polaris_) rất gần với kinh tuyến trời.
@@ -71,6 +77,7 @@ và có cao độ là bao nhiêu (làm tròn đến 1º)?
 > **Câu hỏi 9**. Ta có thể nhìn thấy Merak và ngôi sao vừa rồi vào ngày giờ lúc đó không?
 <select class='webex-select'><option value='blank'></option><option value=''>TRUE</option><option value='answer'>FALSE</option></select>
 
+---
 
 **L**. Chỉnh trường nhìn về khoảng 60º.
 
@@ -98,6 +105,8 @@ của Formalhaut.
 > **Câu hỏi 13**. Xích kinh (_Right Ascension_) và xích vĩ (_Declination_) của nó có thay đổi không?
 <select class='webex-select'><option value='blank'></option><option value=''>TRUE</option><option value='answer'>FALSE</option></select>
 
+---
+
 **P**. Chỉnh ngày giờ về 20/3/2024 lúc 10h05'.
 
 **Q**. Thời điểm này được chọn là do nó xấp xỉ với (thời điểm) Xuân phân (_Vernal Equinox_) của năm 2024. Xích kinh (đo bằng giờ-phút-giây) được tính bắt đầu từ một điểm đặc biệt trên bầu trời, gọi là Điểm (xuân) phân (trong tiếng Anh cũng gọi là _Vernal Equinox_).
@@ -105,13 +114,15 @@ của Formalhaut.
 **R**. Chọn Mặt Trời và đặt vào giữa màn hình. Do ta đang ở xấp xỉ thời điểm Xuân phân, Mặt trời gần như ở giao điểm của hai đường quan trọng trên bầu trời.
 
 > **Câu hỏi 14**. Hai đường đó là?
-<div class='webex-radiogroup' id='radio_YQWBACMJTW'><label><input type="radio" autocomplete="off" name="radio_YQWBACMJTW" value=""></input> <span>đường thẳng (_Straight_) và đường chéo (_Diagonal_)</span></label><label><input type="radio" autocomplete="off" name="radio_YQWBACMJTW" value=""></input> <span>kinh tuyến trời (_Meridian_) và đường chân trời (_Horizon_)</span></label><label><input type="radio" autocomplete="off" name="radio_YQWBACMJTW" value="answer"></input> <span>xích đạo trời (_Celestial equator_) và hoàng đạo (_Ecliptic_)</span></label><label><input type="radio" autocomplete="off" name="radio_YQWBACMJTW" value=""></input> <span>xích đạo trời (_Celestial equator_) và kinh tuyến trời (_Meridian_)</span></label></div>
+<div class='webex-radiogroup' id='radio_PPPNZIWZDU'><label><input type="radio" autocomplete="off" name="radio_PPPNZIWZDU" value=""></input> <span>đường thẳng (_Straight_) và đường chéo (_Diagonal_)</span></label><label><input type="radio" autocomplete="off" name="radio_PPPNZIWZDU" value=""></input> <span>kinh tuyến trời (_Meridian_) và đường chân trời (_Horizon_)</span></label><label><input type="radio" autocomplete="off" name="radio_PPPNZIWZDU" value="answer"></input> <span>xích đạo trời (_Celestial equator_) và hoàng đạo (_Ecliptic_)</span></label><label><input type="radio" autocomplete="off" name="radio_PPPNZIWZDU" value=""></input> <span>xích đạo trời (_Celestial equator_) và kinh tuyến trời (_Meridian_)</span></label></div>
   
 >
 > **Câu hỏi 15**. Giao điểm của hai đường đó có xích kinh là:
 <input class='webex-solveme nospaces' size='1' data-answer='["0"]'/> h 
 <input class='webex-solveme nospaces' size='1' data-answer='["0"]'/> m 
 <input class='webex-solveme nospaces' size='1' data-answer='["0"]'/> s
+
+---
 
 **S**. Giờ đây bạn đã sử dụng cả hai hệ tọa độ (chân trời và xích đạo). Hãy trả lời các câu hỏi sau:
 
