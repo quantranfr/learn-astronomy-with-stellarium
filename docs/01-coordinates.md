@@ -114,7 +114,7 @@ của Formalhaut.
 **R**. Chọn Mặt Trời và đặt vào giữa màn hình. Do ta đang ở xấp xỉ thời điểm Xuân phân, Mặt trời gần như ở giao điểm của hai đường quan trọng trên bầu trời.
 
 > **Câu hỏi 14**. Hai đường đó là?
-<div class='webex-radiogroup' id='radio_PPPNZIWZDU'><label><input type="radio" autocomplete="off" name="radio_PPPNZIWZDU" value=""></input> <span>đường thẳng (_Straight_) và đường chéo (_Diagonal_)</span></label><label><input type="radio" autocomplete="off" name="radio_PPPNZIWZDU" value=""></input> <span>kinh tuyến trời (_Meridian_) và đường chân trời (_Horizon_)</span></label><label><input type="radio" autocomplete="off" name="radio_PPPNZIWZDU" value="answer"></input> <span>xích đạo trời (_Celestial equator_) và hoàng đạo (_Ecliptic_)</span></label><label><input type="radio" autocomplete="off" name="radio_PPPNZIWZDU" value=""></input> <span>xích đạo trời (_Celestial equator_) và kinh tuyến trời (_Meridian_)</span></label></div>
+<div class='webex-radiogroup' id='radio_PJJDCMVZIQ'><label><input type="radio" autocomplete="off" name="radio_PJJDCMVZIQ" value=""></input> <span>đường thẳng (_Straight_) và đường chéo (_Diagonal_)</span></label><label><input type="radio" autocomplete="off" name="radio_PJJDCMVZIQ" value=""></input> <span>kinh tuyến trời (_Meridian_) và đường chân trời (_Horizon_)</span></label><label><input type="radio" autocomplete="off" name="radio_PJJDCMVZIQ" value="answer"></input> <span>xích đạo trời (_Celestial equator_) và hoàng đạo (_Ecliptic_)</span></label><label><input type="radio" autocomplete="off" name="radio_PJJDCMVZIQ" value=""></input> <span>xích đạo trời (_Celestial equator_) và kinh tuyến trời (_Meridian_)</span></label></div>
   
 >
 > **Câu hỏi 15**. Giao điểm của hai đường đó có xích kinh là:
