@@ -323,7 +323,7 @@ window.onload = function() {
       document.getElementById('logoutButton').addEventListener('click', function () {
         if (window.netlifyIdentity) {
           window.netlifyIdentity.logout();
-          checkLoginStatus();
+          window.location.href = 'login.html';
         } else {
           console.error('Netlify Identity not initialized yet. Check that it is loaded in your HTML body.');
         }
