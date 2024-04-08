@@ -52,7 +52,7 @@ Trong khi đọc, chú ý đến các khái niệm sau:
 > **Câu hỏi 5**. Giờ đây cao độ của nó là bao nhiêu (làm tròn đến 1º)?
 `r fitb(11)`º
 >
-> **Câu hỏi 6**. Giờ góc phương vị (làm tròn đến 1º)?
+> **Câu hỏi 6**. Và góc phương vị của nó (làm tròn đến 1º)?
 `r fitb(158)`º
 >
 > **Câu hỏi 7**. Cao độ và góc phương vị trong câu 5. và 6. có giống với kết quả của câu hỏi 2. và 3. không?

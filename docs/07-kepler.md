@@ -41,12 +41,12 @@ Mục tiêu thứ hai là hiểu công thức và ghi nhớ Định luật thứ
 
 | Hành tinh | P (ngày) | P (năm) | $P^2$ | a (A.U.) | a thực tế (A.U.) | Sai số (%) |
 | --------- | -------- | ------- | ----- | ----- | --------- | ------- |
-| Sao Thủy | __ | ____ |  | _____ | 0.387 | ____ |
-| Sao Kim | _____ |  |  | _____ | 0.723 | ____ |
+| Sao Thủy | <input class='webex-solveme nospaces' data-tol='4' size='2' data-answer='["88"]'/> | <input class='webex-solveme nospaces' data-tol='0.01' size='4' data-answer='["0.24",".24"]'/> |  | <input class='webex-solveme nospaces' data-tol='0.04' size='5' data-answer='["0.387",".387"]'/> | 0.387 | <input class='webex-solveme nospaces' data-tol='100' size='4' data-answer='["0.01",".01"]'/> |
+| Sao Kim | <input class='webex-solveme nospaces' data-tol='10' size='5' data-answer='["224.7"]'/> |  |  | <input class='webex-solveme nospaces' data-tol='0.07' size='5' data-answer='["0.723",".723"]'/> | 0.723 | <input class='webex-solveme nospaces' data-tol='10' size='4' data-answer='["0.01",".01"]'/> |
 | Trái Đất | 365.24 | 1 | 1 | 1 | 1 | 0 |
-| Sao Hỏa | - | ____ |  | _____ | 1.523 | ____ |
-| Sao Mộc | - | _____ |  | _____ | 5.204 | ____ |
-| Sao Thổ | - | _____ |  | _____ | 9.582 | ____ |
+| Sao Hỏa | - | <input class='webex-solveme nospaces' data-tol='0.1' size='4' data-answer='["1.88"]'/> |  | <input class='webex-solveme nospaces' data-tol='0.1' size='5' data-answer='["1.523"]'/> | 1.523 | <input class='webex-solveme nospaces' data-tol='10' size='4' data-answer='["0.01",".01"]'/> |
+| Sao Mộc | - | <input class='webex-solveme nospaces' data-tol='0.6' size='5' data-answer='["11.86"]'/> |  | <input class='webex-solveme nospaces' data-tol='0.5' size='5' data-answer='["5.204"]'/> | 5.204 | <input class='webex-solveme nospaces' data-tol='10' size='4' data-answer='["0.01",".01"]'/> |
+| Sao Thổ | - | <input class='webex-solveme nospaces' data-tol='1.5' size='5' data-answer='["29.46"]'/> |  | <input class='webex-solveme nospaces' data-tol='1' size='5' data-answer='["9.582"]'/> | 9.582 | <input class='webex-solveme nospaces' data-tol='10' size='4' data-answer='["0.01",".01"]'/> |
 
 : (\#tab:kepler) Bảng tổng hợp
 

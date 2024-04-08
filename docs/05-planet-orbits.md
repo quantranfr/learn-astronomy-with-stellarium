@@ -34,10 +34,10 @@ Sao Thủy và Sao Kim là những đối tượng quan sát thường xuyên xu
 
 | Hành tinh | Hướng cực đại | Năm | Tháng | Ngày | Ly giác |
 | --- | ----- | --- | --- | --- | --- |
-| Sao Thủy | Đông | 2024  | 3 | __ | __º |
-| Sao Thủy | Tây | 2024  | _ | __ | __º |
-| Sao Kim | Đông | ____  | _ | | __º |
-| Sao Kim | Tây | ____  | _ | | __º |
+| Sao Thủy | Đông | 2024  | 3 | <input class='webex-solveme nospaces' data-tol='2' size='2' data-answer='["25"]'/> | <input class='webex-solveme nospaces' data-tol='3' size='2' data-answer='["19"]'/>º |
+| Sao Thủy | Tây | 2024  | <input class='webex-solveme nospaces' size='1' data-answer='["5"]'/> | <input class='webex-solveme nospaces' data-tol='3' size='2' data-answer='["10"]'/> | <input class='webex-solveme nospaces' data-tol='3' size='2' data-answer='["26"]'/>º |
+| Sao Kim | Đông | <input class='webex-solveme nospaces' size='4' data-answer='["2025"]'/>  | <input class='webex-solveme nospaces' size='1' data-answer='["1"]'/> | | <input class='webex-solveme nospaces' data-tol='3' size='2' data-answer='["47"]'/>º |
+| Sao Kim | Tây | <input class='webex-solveme nospaces' size='4' data-answer='["2025"]'/>  | <input class='webex-solveme nospaces' data-tol='2' size='1' data-answer='["6"]'/> | | <input class='webex-solveme nospaces' data-tol='3' size='2' data-answer='["46"]'/>º |
 
 : (\#tab:elongation) Các sự kiện ly giác cực đại
 
