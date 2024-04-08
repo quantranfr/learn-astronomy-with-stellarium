@@ -72,7 +72,7 @@ Trong khi đọc, chú ý đến các khái niệm sau:
 > **Câu hỏi 8**. Có một ngôi sao sáng ngay phía trên Merak. Nó tên là gì?
 <input class='webex-solveme nospaces ignorecase' size='10' data-answer='["Dubhe"]'/>
 và có cao độ là bao nhiêu (làm tròn đến 1º)?
-<input class='webex-solveme nospaces' size='3' data-answer='["-15"]'/>º
+<input class='webex-solveme nospaces' size='3' data-answer='["-12"]'/>º
 >
 > **Câu hỏi 9**. Ta có thể nhìn thấy Merak và ngôi sao vừa rồi vào ngày giờ lúc đó không?
 <select class='webex-select'><option value='blank'></option><option value=''>TRUE</option><option value='answer'>FALSE</option></select>
@@ -88,18 +88,18 @@ và có cao độ là bao nhiêu (làm tròn đến 1º)?
 > **Câu hỏi 10**. Tìm xích kinh (_Right Ascension_):
 <input class='webex-solveme nospaces' size='2' data-answer='["22"]'/> h
 <input class='webex-solveme nospaces' size='2' data-answer='["58"]'/> m
-<input class='webex-solveme nospaces' data-tol='1.1' size='2' data-answer='["59"]'/> s
+<input class='webex-solveme nospaces' data-tol='1.1' size='2' data-answer='["58"]'/> s
 và xích vĩ (_Declination_):
-<input class='webex-solveme nospaces' size='3' data-answer='["-20"]'/> º
+<input class='webex-solveme nospaces' size='3' data-answer='["-29"]'/> º
 <input class='webex-solveme nospaces' data-tol='1.1' size='2' data-answer='["30"]'/> '
-của Formalhaut.
+của Fomalhaut.
 >
-> **Câu hỏi 11**. Formalhaut nằm trong chòm sao nào?
+> **Câu hỏi 11**. Fomalhaut nằm trong chòm sao nào?
 <select class='webex-select'><option value='blank'></option><option value='answer'>Nam Ngư (_Piscis Austrinus_)</option><option value=''>Ba Giang (_Eridanus_, "ba" = sóng)</option><option value=''>Phượng Hoàng (_Phoenix_)</option><option value=''>Ngọc Phu (_Sculptor_)</option></select>
 
 **O**. O. Tiến thời gian thêm một tháng (20/4/2024 lúc 12h30pm).
 
-> **Câu hỏi 12**. Formalhaut có di chuyển so với vị trí lúc trước không?
+> **Câu hỏi 12**. Fomalhaut có di chuyển so với vị trí lúc trước không?
 <select class='webex-select'><option value='blank'></option><option value='answer'>TRUE</option><option value=''>FALSE</option></select>
 >
 > **Câu hỏi 13**. Xích kinh (_Right Ascension_) và xích vĩ (_Declination_) của nó có thay đổi không?
@@ -114,7 +114,7 @@ của Formalhaut.
 **R**. Chọn Mặt Trời và đặt vào giữa màn hình. Do ta đang ở xấp xỉ thời điểm Xuân phân, Mặt trời gần như ở giao điểm của hai đường quan trọng trên bầu trời.
 
 > **Câu hỏi 14**. Hai đường đó là?
-<div class='webex-radiogroup' id='radio_VEGLDWXCOI'><label><input type="radio" autocomplete="off" name="radio_VEGLDWXCOI" value=""></input> <span>đường thẳng (_Straight_) và đường chéo (_Diagonal_)</span></label><label><input type="radio" autocomplete="off" name="radio_VEGLDWXCOI" value=""></input> <span>kinh tuyến trời (_Meridian_) và đường chân trời (_Horizon_)</span></label><label><input type="radio" autocomplete="off" name="radio_VEGLDWXCOI" value="answer"></input> <span>xích đạo trời (_Celestial equator_) và hoàng đạo (_Ecliptic_)</span></label><label><input type="radio" autocomplete="off" name="radio_VEGLDWXCOI" value=""></input> <span>xích đạo trời (_Celestial equator_) và kinh tuyến trời (_Meridian_)</span></label></div>
+<div class='webex-radiogroup' id='radio_FNJHMOEJLK'><label><input type="radio" autocomplete="off" name="radio_FNJHMOEJLK" value=""></input> <span>đường thẳng (_Straight_) và đường chéo (_Diagonal_)</span></label><label><input type="radio" autocomplete="off" name="radio_FNJHMOEJLK" value=""></input> <span>kinh tuyến trời (_Meridian_) và đường chân trời (_Horizon_)</span></label><label><input type="radio" autocomplete="off" name="radio_FNJHMOEJLK" value="answer"></input> <span>xích đạo trời (_Celestial equator_) và hoàng đạo (_Ecliptic_)</span></label><label><input type="radio" autocomplete="off" name="radio_FNJHMOEJLK" value=""></input> <span>xích đạo trời (_Celestial equator_) và kinh tuyến trời (_Meridian_)</span></label></div>
   
 >
 > **Câu hỏi 15**. Giao điểm của hai đường đó có xích kinh là:

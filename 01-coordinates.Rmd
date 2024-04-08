@@ -72,7 +72,7 @@ Trong khi đọc, chú ý đến các khái niệm sau:
 > **Câu hỏi 8**. Có một ngôi sao sáng ngay phía trên Merak. Nó tên là gì?
 `r fitb("Dubhe", ignore_case=TRUE, width=10)`
 và có cao độ là bao nhiêu (làm tròn đến 1º)?
-`r fitb(-15)`º
+`r fitb(-12)`º
 >
 > **Câu hỏi 9**. Ta có thể nhìn thấy Merak và ngôi sao vừa rồi vào ngày giờ lúc đó không?
 `r torf(FALSE)`
@@ -88,18 +88,18 @@ và có cao độ là bao nhiêu (làm tròn đến 1º)?
 > **Câu hỏi 10**. Tìm xích kinh (_Right Ascension_):
 `r fitb(22)` h
 `r fitb(58)` m
-`r fitb(59, tol=1.1)` s
+`r fitb(58, tol=1.1)` s
 và xích vĩ (_Declination_):
-`r fitb(-20)` º
+`r fitb(-29)` º
 `r fitb(30, tol=1.1)` '
-của Formalhaut.
+của Fomalhaut.
 >
-> **Câu hỏi 11**. Formalhaut nằm trong chòm sao nào?
+> **Câu hỏi 11**. Fomalhaut nằm trong chòm sao nào?
 `r mcq(c(answer="Nam Ngư (_Piscis Austrinus_)", 'Ba Giang (_Eridanus_, "ba" = sóng)', "Phượng Hoàng (_Phoenix_)", "Ngọc Phu (_Sculptor_)"))`
 
 **O**. O. Tiến thời gian thêm một tháng (20/4/2024 lúc 12h30pm).
 
-> **Câu hỏi 12**. Formalhaut có di chuyển so với vị trí lúc trước không?
+> **Câu hỏi 12**. Fomalhaut có di chuyển so với vị trí lúc trước không?
 `r torf(TRUE)`
 >
 > **Câu hỏi 13**. Xích kinh (_Right Ascension_) và xích vĩ (_Declination_) của nó có thay đổi không?
