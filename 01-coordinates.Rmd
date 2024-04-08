@@ -102,7 +102,7 @@ của Fomalhaut.
 > **Câu hỏi 12**. Fomalhaut có di chuyển so với vị trí lúc trước không?
 `r torf(TRUE)`
 >
-> **Câu hỏi 13**. Xích kinh (_Right Ascension_) và xích vĩ (_Declination_) của nó có thay đổi không?
+> **Câu hỏi 13**. Xích kinh (_Right Ascension_) và xích vĩ (_Declination_) của nó có thay đổi rõ rệt không?
 `r torf(FALSE)`
 
 ---
