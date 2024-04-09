@@ -1,0 +1,109 @@
+# Mặt Trời và đường chân trời
+
+## Mục tiêu
+
+Dự đoán được tương đối chính xác vị trí Mặt Trời mọc và lặn trên đường chân trời, dự đoán được cao độ của Mặt Trời vào giữa trưa. Vẽ được đường đi tương đối của Mặt Trời trên vòm trời trong một ngày. Từ đường đi của Mặt Trời, hiểu được nguyên do khiến ngày dài hơn vào mùa hè và ngắn hơn vào mùa đông.
+
+## Thực hành
+
+**A**. Hiển thị công cụ Thước đo góc trên thanh công cụ bên dưới (kích hoạt plugin *Angle Measure* trong menu *Configuration*, tab *Plugins*). Có thể cần khởi động lại Stellarium.
+
+**B**. Chọn vị trí *Qui Nhon* (phím tắt *F6*). Chỉnh ngày giờ thành 20/1/2024 lúc 7h00 (phím tắt *F5*). Quay hướng nhìn về phía Đông (*E*), trường nhìn (*FOV*) khoảng 40º.
+
+**C**. Tắt hiệu ứng quầng chói Mặt trời (*Sun's glare*) và nhật hoa (*Sun's corona*) để nhìn rõ đĩa Mặt trời (phím tắt *F4*, tab *SSO*).
+
+::: {.webex-box}
+**Câu hỏi 1**. Sử dụng công cụ Thước đo góc, cho biết đường kính góc của Mặt Trời: `r fitb('32')`' (zoom vào Mặt Trời, click vào Thước đo góc ở thanh công cụ bên dưới, rê chuột theo đường kính Mặt Trời).
+:::
+
+**D**. Click vào Mặt Trời để hiện cột thông tin bên phía bên trái màn hình, nhìn vào thông tin *Apparent diameter* và so sánh với kết quả vừa tìm được. Nếu khớp, chứng tỏ đĩa Mặt Trời (dù trông hơi nhỏ trên phần mềm) có kích thước đúng với thực tế.
+
+---
+
+**E**. Chọn quang cảnh là Đại dương để đường chân trời thẳng mịn (phím tắt *F4*, tab *Landscape*, chọn *Ocean*).
+
+::: {.webex-box}
+**Câu hỏi 2**. Tăng giảm thời gian để tìm thời điểm mép trên của Mặt Trời chạm vào đường chân trời (định dạng `#h##`): `r fitb('6h11')`. So sánh kết quả vừa tìm được với thông tin *Rise* ở cạnh trái màn hình khi click vào Mặt Trời.
+:::
+
+**F**. Tăng thời gian thêm 1 phút, lúc này tâm Mặt Trời gần như nằm trên đường chân trời, và số đo Cao độ (*Altitude*) ở cột thông tin bên trái rất gần 0º0'.
+
+**G**. Bật vạch chia độ đường chân trời (phím tắt *F4*, tab *Markings* tích chọn ô *Compass marks*).
+
+::: {.webex-box}
+**Câu hỏi 3**. Vào ngày này, Mặt Trời không mọc vào hướng chính Đông mà mọc lệch về phía `r mcq(c("Bắc", answer="Nam"))` một góc khoảng `r fitb(20.5, tol=0.5)`º.
+:::
+
+**H**. Bật hệ tọa độ xích đạo (*Equatorial Grid*). 
+
+::: {.webex-box}
+**Câu hỏi 4**. Trên đường chân trời, càng xa hướng chính Đông thì giá trị tuyệt đối của xích vĩ càng `r mcq(c(answer="lớn", "nhỏ"))`
+Lệch về phía Bắc, xích vĩ mang giá trị `r mcq(c(answer="dương", "âm"))`
+Còn lệch về phía Nam, xích vĩ mang giá trị `r mcq(c("dương", answer="âm"))`.
+
+**Câu hỏi 5**. Trong ngày này, xích vĩ Mặt Trời thay đổi `r mcq(c("rõ rệt", answer="không đáng kể"))` và có giá trị khoảng `r fitb(-20)`º.
+:::
+
+**I**. Chỉnh giờ đến 11h54 (ứng với *Transit* trong cột thông tin khi click vào Mặt Trời). Đây là thời điểm Mặt Trời lên cao nhất phía trên đường chân trời.
+
+::: {.webex-box}
+**Câu hỏi 6**. Lúc này Mặt Trời có cao độ là bao nhiêu trong hệ tọa độ chân trời? `r fitb(56)`º. Nếu không đọc thông tin từ Stellarium, liệu ta có thể suy ra cao độ này từ những dữ liệu đã biết được không (vĩ độ của Quy Nhơn: 14º, xích vĩ của Mặt Trời vào ngày này: -20º)?
+
+**Câu hỏi 7**. Tìm thời điểm mép trên của Mặt Trời chạm vào đường chân trời phía Tây (định dạng `##h##`): `r fitb('17h37')`. So sánh kết quả vừa tìm được với thông tin *Set* ở cạnh trái màn hình khi click vào Mặt Trời.
+
+**Câu hỏi 8**. Điền dữ liệu còn thiếu vào bảng \@ref(tab:sunrise), sử dụng cột thông tin bên trái khi click vào Mặt Trời:
+
+| Ngày | Giờ mọc | "Giữa trưa" | Giờ lặn | Độ dài ngày | Xích vĩ |
+| ---- | ---- | ---- | ---- | ---- | ---- |
+| 20/1/2024 | `r fitb('6h11')` | `r fitb('11h54')` | `r fitb('17h37')` | `r fitb('11h26')` | `r fitb(-20)`º |
+| 20/2/2024 | `r fitb('6h05')` | `r fitb('11h57')` | `r fitb('17h49')` | `r fitb('11h45')` | `r fitb(-11)`º |
+| 20/3/2024 | `r fitb('5h47')` | `r fitb('11h51')` | `r fitb('17h54')` | `r fitb('12h07')` | `r fitb(0, width=3)`º |
+| 20/4/2024 | `r fitb('5h27')` | `r fitb('11h42')` | `r fitb('17h57')` | `r fitb('12h30')` | `r fitb(11, width=3)`º |
+| 20/5/2024 | 5h16 | 11h40 | 18h04 | 12h48 | 20º |
+| 21/6/2024 | 5h17 | 11h45 | 18h13 | 12h56 | 23º |
+| 21/7/2024 | 5h25 | 11h50 | 18h14 | 12h49 | 20º |
+| 21/8/2024 | 5h31 | 11h46 | 18h01 | 12h31 | 12º |
+| 22/9/2024 | 5h32 | 11h36 | 17h39 | 12h07 | 0º |
+| 21/10/2024 | 5h35 | 11h28 | 17h20 | 11h45 | -11º |
+| 21/11/2024 | 5h46 | 11h29 | 17h12 | 11h26 | -20º |
+| 21/12/2024 | 6h02 | 11h41 | 17h21 | 11h19 | -23º |
+
+: (\#tab:sunrise) Bảng dữ liệu ở Quy Nhơn
+
+**Câu hỏi 9**. Ngày dài nhất rơi vào tháng `r fitb(6)`, ngày ngắn nhất rơi vào tháng `r fitb(12)`, các tháng có ngày đêm dài gần bằng nhau: `r fitb(3)` và `r fitb(9)`.
+
+**Câu hỏi 10**. Ngày Mặt Trời __mọc sớm__ nhất trùng với ngày Mặt Trời __lặn muộn__ nhất: `r torf(FALSE)`. Ngày Mặt Trời __mọc sớm__ nhất trùng với ngày dài nhất: `r torf(FALSE)`.
+:::
+
+---
+
+**J**. Bảng \@ref(tab:seoul) trình bày các dữ liệu tương ứng ở Seoul (38º Bắc). Để ý các điểm giống và khác so với Quy Nhơn. Nhận xét về sự biến thiên của xích vĩ trong cả hai trường hợp.
+
+| Ngày | Giờ mọc | Giờ lặn | Độ dài ngày | Xích vĩ |
+| ---- | ---- | ---- | ---- | ---- | ---- |
+| 20/1/2024 | 7h44 | 17h42 | 9h58 | -20º |
+| 20/2/2024 | 7h17 | 18h16 | 10h59 | -11º |
+| 20/3/2024 | 6h36 | 18h44 | 12h08 | 0º |
+| 20/4/2024 | 5h50 | 19h12 | 13h22 | 11º |
+| 20/5/2024 | 5h19 | 19h39 | 14h20 | 20º |
+| 21/6/2024 | 5h11 | 19h57 | 14h46 | 23º |
+| 21/7/2024 | 5h27 | 19h49 | 14h22 | 20º |
+| 21/8/2024 | 5h53 | 19h17 | 13h24 | 12º |
+| 22/9/2024 | 6h20 | 18h29 | 12h09 | 0º |
+| 21/10/2024 | 6h46 | 17h47 | 11h01 | -11º |
+| 21/11/2024 | 7h18 | 17h17 | 9h59 | -20º |
+| 21/12/2024 | 7h43 | 17h17 | 9h34 | -23º |
+
+: (\#tab:seoul) Bảng dữ liệu ở Seoul
+
+::: {.webex-box}
+**Câu hỏi 11**. Mặt Trời mọc ở chính Đông đồng nghĩa với việc Mặt Trời mọc thẳng đứng khi nhô lên phía trên đường chân trời: `r torf(FALSE)`. Vậy góc tạo bởi hướng đi của Mặt Trời sau khi mọc so với đường chân trời có thể suy ra từ yếu tố nào? `r mcq(c(answer='vĩ độ nơi quan sát', 'kinh độ nơi quan sát'))` 
+:::
+
+## Mở rộng
+
+Giờ Mặt Trời mọc/lặn có vẻ không biến thiên theo một quy tắc đơn giản nào. Thực vậy, ngoài việc phụ thuộc vào mùa, kinh độ, vĩ độ ở nơi quan sát, các thời điểm mọc lặn này còn phụ thuộc vào tốc độ di chuyển của Trái Đất quanh Mặt Trời: quỹ đạo của Trái Đất quanh Mặt Trời có hình ê-líp và tốc độ di chuyển không đều.
+
+Ngoài ra, giờ Mặt Trời mọc còn phụ thuộc vào độ cao quan sát so với mực nước biển (mọc sớm hơn 1 phút khi lên cao ~1500m). Stellarium không thể hiện được điều này.
+
+Đọc thêm về khái niệm [Analemma](https://en.wikipedia.org/wiki/Analemma) trên wikipedia.

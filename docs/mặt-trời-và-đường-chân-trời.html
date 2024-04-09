@@ -1,0 +1,728 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>Chương 2 Mặt Trời và đường chân trời | Học thiên văn qua Stellarium</title>
+<meta name="author" content="Trần Trung Quân">
+<meta name="description" content="2.1 Mục tiêu Dự đoán được tương đối chính xác vị trí Mặt Trời mọc và lặn trên đường chân trời, dự đoán được cao độ của Mặt Trời vào giữa trưa. Vẽ được đường đi tương đối của Mặt Trời trên vòm trời...">
+<meta name="generator" content="bookdown 0.37 with bs4_book()">
+<meta property="og:title" content="Chương 2 Mặt Trời và đường chân trời | Học thiên văn qua Stellarium">
+<meta property="og:type" content="book">
+<meta property="og:description" content="2.1 Mục tiêu Dự đoán được tương đối chính xác vị trí Mặt Trời mọc và lặn trên đường chân trời, dự đoán được cao độ của Mặt Trời vào giữa trưa. Vẽ được đường đi tương đối của Mặt Trời trên vòm trời...">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Chương 2 Mặt Trời và đường chân trời | Học thiên văn qua Stellarium">
+<meta name="twitter:description" content="2.1 Mục tiêu Dự đoán được tương đối chính xác vị trí Mặt Trời mọc và lặn trên đường chân trời, dự đoán được cao độ của Mặt Trời vào giữa trưa. Vẽ được đường đi tương đối của Mặt Trời trên vòm trời...">
+<!-- JS --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://kit.fontawesome.com/6ecbd6c532.js" crossorigin="anonymous"></script><script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link href="libs/bootstrap-4.6.0/bootstrap.min.css" rel="stylesheet">
+<script src="libs/bootstrap-4.6.0/bootstrap.bundle.min.js"></script><script src="libs/bs3compat-0.6.1/transition.js"></script><script src="libs/bs3compat-0.6.1/tabs.js"></script><script src="libs/bs3compat-0.6.1/bs3compat.js"></script><link href="libs/bs4_book-1.0.0/bs4_book.css" rel="stylesheet">
+<script src="libs/bs4_book-1.0.0/bs4_book.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/autocomplete.js/0.38.0/autocomplete.jquery.min.js" integrity="sha512-GU9ayf+66Xx2TmpxqJpliWbT5PiGYxpaG8rfnBEk1LL8l1KGkRShhngwdXK1UgqhAzWpZHSiYPc09/NwDQIGyg==" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/mark.min.js" integrity="sha512-5CYOlHXGh6QpOFA/TeTylKLWfB3ftPsde7AnmhuitiTX4K5SqCLBeKro6sPS8ilsz1Q4NRx3v8Ko2IBiszzdww==" crossorigin="anonymous"></script><!-- CSS --><style type="text/css">
+    
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  </style>
+<style type="text/css">
+    /* Used with Pandoc 2.11+ new --citeproc when CSL is used */
+    div.csl-bib-body { }
+    div.csl-entry {
+      clear: both;
+          margin-bottom: 0em;
+        }
+    .hanging div.csl-entry {
+      margin-left:2em;
+      text-indent:-2em;
+    }
+    div.csl-left-margin {
+      min-width:2em;
+      float:left;
+    }
+    div.csl-right-inline {
+      margin-left:2em;
+      padding-left:1em;
+    }
+    div.csl-indent {
+      margin-left: 2em;
+    }
+  </style>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="webex.css">
+</head>
+<body data-spy="scroll" data-target="#toc">
+
+<div class="container-fluid">
+<div class="row">
+  <header class="col-sm-12 col-lg-3 sidebar sidebar-book"><a class="sr-only sr-only-focusable" href="#content">Skip to main content</a>
+
+    <div class="d-flex align-items-start justify-content-between">
+      <h1>
+        <a href="index.html" title="">Học thiên văn qua Stellarium</a>
+      </h1>
+      <button class="btn btn-outline-primary d-lg-none ml-2 mt-1" type="button" data-toggle="collapse" data-target="#main-nav" aria-expanded="true" aria-controls="main-nav"><i class="fas fa-bars"></i><span class="sr-only">Show table of contents</span></button>
+    </div>
+
+    <div id="main-nav" class="collapse-lg">
+      <form role="search">
+        <input id="search" class="form-control" type="search" placeholder="Search" aria-label="Search">
+</form>
+
+      <nav aria-label="Table of contents"><h2>Table of contents</h2>
+        <ul class="book-toc list-unstyled">
+<li><a class="" href="index.html">Giới thiệu</a></li>
+<li><a class="" href="h%E1%BB%87-t%E1%BB%8Da-%C4%91%E1%BB%99-tr%E1%BB%9Di.html"><span class="header-section-number">1</span> Hệ tọa độ trời</a></li>
+<li><a class="active" href="m%E1%BA%B7t-tr%E1%BB%9Di-v%C3%A0-%C4%91%C6%B0%E1%BB%9Dng-ch%C3%A2n-tr%E1%BB%9Di.html"><span class="header-section-number">2</span> Mặt Trời và đường chân trời</a></li>
+<li><a class="" href="quan-s%C3%A1t-sao-th%E1%BB%A7y-v%C3%A0-sao-kim.html"><span class="header-section-number">3</span> Quan sát Sao Thủy và Sao Kim</a></li>
+<li><a class="" href="%C4%91%E1%BB%8Bnh-lu%E1%BA%ADt-th%E1%BB%A9-3-c%E1%BB%A7a-kepler.html"><span class="header-section-number">4</span> Định luật thứ 3 của Kepler</a></li>
+<li><a class="" href="references.html">References</a></li>
+</ul>
+
+        <div class="book-extra">
+          <p><a id="book-repo" href="https://github.com/rstudio/bookdown-demo">View book source <i class="fab fa-github"></i></a></p>
+        </div>
+      </nav>
+</div>
+  </header><main class="col-sm-12 col-md-9 col-lg-7" id="content"><div id="mặt-trời-và-đường-chân-trời" class="section level1" number="2">
+<h1>
+<span class="header-section-number">Chương 2</span> Mặt Trời và đường chân trời<a class="anchor" aria-label="anchor" href="#m%E1%BA%B7t-tr%E1%BB%9Di-v%C3%A0-%C4%91%C6%B0%E1%BB%9Dng-ch%C3%A2n-tr%E1%BB%9Di"><i class="fas fa-link"></i></a>
+</h1>
+<div id="mục-tiêu-1" class="section level2" number="2.1">
+<h2>
+<span class="header-section-number">2.1</span> Mục tiêu<a class="anchor" aria-label="anchor" href="#m%E1%BB%A5c-ti%C3%AAu-1"><i class="fas fa-link"></i></a>
+</h2>
+<p>Dự đoán được tương đối chính xác vị trí Mặt Trời mọc và lặn trên đường chân trời, dự đoán được cao độ của Mặt Trời vào giữa trưa. Vẽ được đường đi tương đối của Mặt Trời trên vòm trời trong một ngày. Từ đường đi của Mặt Trời, hiểu được nguyên do khiến ngày dài hơn vào mùa hè và ngắn hơn vào mùa đông.</p>
+</div>
+<div id="thực-hành-1" class="section level2" number="2.2">
+<h2>
+<span class="header-section-number">2.2</span> Thực hành<a class="anchor" aria-label="anchor" href="#th%E1%BB%B1c-h%C3%A0nh-1"><i class="fas fa-link"></i></a>
+</h2>
+<p><strong>A</strong>. Hiển thị công cụ Thước đo góc trên thanh công cụ bên dưới (kích hoạt plugin <em>Angle Measure</em> trong menu <em>Configuration</em>, tab <em>Plugins</em>). Có thể cần khởi động lại Stellarium.</p>
+<p><strong>B</strong>. Chọn vị trí <em>Qui Nhon</em> (phím tắt <em>F6</em>). Chỉnh ngày giờ thành 20/1/2024 lúc 7h00 (phím tắt <em>F5</em>). Quay hướng nhìn về phía Đông (<em>E</em>), trường nhìn (<em>FOV</em>) khoảng 40º.</p>
+<p><strong>C</strong>. Tắt hiệu ứng quầng chói Mặt trời (<em>Sun's glare</em>) và nhật hoa (<em>Sun's corona</em>) để nhìn rõ đĩa Mặt trời (phím tắt <em>F4</em>, tab <em>SSO</em>).</p>
+<div class="webex-box">
+<p><strong>Câu hỏi 1</strong>. Sử dụng công cụ Thước đo góc, cho biết đường kính góc của Mặt Trời: <input class="webex-solveme nospaces" size="2" data-answer='["32"]'>' (zoom vào Mặt Trời, click vào Thước đo góc ở thanh công cụ bên dưới, rê chuột theo đường kính Mặt Trời).</p>
+</div>
+<p><strong>D</strong>. Click vào Mặt Trời để hiện cột thông tin bên phía bên trái màn hình, nhìn vào thông tin <em>Apparent diameter</em> và so sánh với kết quả vừa tìm được. Nếu khớp, chứng tỏ đĩa Mặt Trời (dù trông hơi nhỏ trên phần mềm) có kích thước đúng với thực tế.</p>
+<hr>
+<p><strong>E</strong>. Chọn quang cảnh là Đại dương để đường chân trời thẳng mịn (phím tắt <em>F4</em>, tab <em>Landscape</em>, chọn <em>Ocean</em>).</p>
+<div class="webex-box">
+<p><strong>Câu hỏi 2</strong>. Tăng giảm thời gian để tìm thời điểm mép trên của Mặt Trời chạm vào đường chân trời (định dạng <code>#h##</code>): <input class="webex-solveme nospaces" size="4" data-answer='["6h11"]'>. So sánh kết quả vừa tìm được với thông tin <em>Rise</em> ở cạnh trái màn hình khi click vào Mặt Trời.</p>
+</div>
+<p><strong>F</strong>. Tăng thời gian thêm 1 phút, lúc này tâm Mặt Trời gần như nằm trên đường chân trời, và số đo Cao độ (<em>Altitude</em>) ở cột thông tin bên trái rất gần 0º0'.</p>
+<p><strong>G</strong>. Bật vạch chia độ đường chân trời (phím tắt <em>F4</em>, tab <em>Markings</em> tích chọn ô <em>Compass marks</em>).</p>
+<div class="webex-box">
+<p><strong>Câu hỏi 3</strong>. Vào ngày này, Mặt Trời không mọc vào hướng chính Đông mà mọc lệch về phía <select class="webex-select"><option value="blank"></option>
+<option value="">Bắc</option>
+<option value="answer">Nam</option></select> một góc khoảng <input class="webex-solveme nospaces" data-tol="0.5" size="4" data-answer='["20.5"]'>º.</p>
+</div>
+<p><strong>H</strong>. Bật hệ tọa độ xích đạo (<em>Equatorial Grid</em>).</p>
+<div class="webex-box">
+<p><strong>Câu hỏi 4</strong>. Trên đường chân trời, càng xa hướng chính Đông thì giá trị tuyệt đối của xích vĩ càng <select class="webex-select"><option value="blank"></option>
+<option value="answer">lớn</option>
+<option value="">nhỏ</option></select>
+Lệch về phía Bắc, xích vĩ mang giá trị <select class="webex-select"><option value="blank"></option>
+<option value="answer">dương</option>
+<option value="">âm</option></select>
+Còn lệch về phía Nam, xích vĩ mang giá trị <select class="webex-select"><option value="blank"></option>
+<option value="">dương</option>
+<option value="answer">âm</option></select>.</p>
+<p><strong>Câu hỏi 5</strong>. Trong ngày này, xích vĩ Mặt Trời thay đổi <select class="webex-select"><option value="blank"></option>
+<option value="">rõ rệt</option>
+<option value="answer">không đáng kể</option></select> và có giá trị khoảng <input class="webex-solveme nospaces" size="3" data-answer='["-20"]'>º.</p>
+</div>
+<p><strong>I</strong>. Chỉnh giờ đến 11h54 (ứng với <em>Transit</em> trong cột thông tin khi click vào Mặt Trời). Đây là thời điểm Mặt Trời lên cao nhất phía trên đường chân trời.</p>
+<div class="webex-box">
+<p><strong>Câu hỏi 6</strong>. Lúc này Mặt Trời có cao độ là bao nhiêu trong hệ tọa độ chân trời? <input class="webex-solveme nospaces" size="2" data-answer='["56"]'>º. Nếu không đọc thông tin từ Stellarium, liệu ta có thể suy ra cao độ này từ những dữ liệu đã biết được không (vĩ độ của Quy Nhơn: 14º, xích vĩ của Mặt Trời vào ngày này: -20º)?</p>
+<p><strong>Câu hỏi 7</strong>. Tìm thời điểm mép trên của Mặt Trời chạm vào đường chân trời phía Tây (định dạng <code>##h##</code>): <input class="webex-solveme nospaces" size="5" data-answer='["17h37"]'>. So sánh kết quả vừa tìm được với thông tin <em>Set</em> ở cạnh trái màn hình khi click vào Mặt Trời.</p>
+<p><strong>Câu hỏi 8</strong>. Điền dữ liệu còn thiếu vào bảng <a href="m%E1%BA%B7t-tr%E1%BB%9Di-v%C3%A0-%C4%91%C6%B0%E1%BB%9Dng-ch%C3%A2n-tr%E1%BB%9Di.html#tab:sunrise">2.1</a>, sử dụng cột thông tin bên trái khi click vào Mặt Trời:</p>
+<div class="inline-table"><table style="width:100%;" class="table table-sm">
+<caption>
+<span id="tab:sunrise">Table 2.1: </span> Bảng dữ liệu ở Quy Nhơn</caption>
+<colgroup>
+<col width="16%">
+<col width="16%">
+<col width="16%">
+<col width="16%">
+<col width="16%">
+<col width="16%">
+</colgroup>
+<thead><tr class="header">
+<th>Ngày</th>
+<th>Giờ mọc</th>
+<th>"Giữa trưa"</th>
+<th>Giờ lặn</th>
+<th>Độ dài ngày</th>
+<th>Xích vĩ</th>
+</tr></thead>
+<tbody>
+<tr class="odd">
+<td>20/1/2024</td>
+<td><input class="webex-solveme nospaces" size="4" data-answer='["6h11"]'></td>
+<td><input class="webex-solveme nospaces" size="5" data-answer='["11h54"]'></td>
+<td><input class="webex-solveme nospaces" size="5" data-answer='["17h37"]'></td>
+<td><input class="webex-solveme nospaces" size="5" data-answer='["11h26"]'></td>
+<td>
+<input class="webex-solveme nospaces" size="3" data-answer='["-20"]'>º</td>
+</tr>
+<tr class="even">
+<td>20/2/2024</td>
+<td><input class="webex-solveme nospaces" size="4" data-answer='["6h05"]'></td>
+<td><input class="webex-solveme nospaces" size="5" data-answer='["11h57"]'></td>
+<td><input class="webex-solveme nospaces" size="5" data-answer='["17h49"]'></td>
+<td><input class="webex-solveme nospaces" size="5" data-answer='["11h45"]'></td>
+<td>
+<input class="webex-solveme nospaces" size="3" data-answer='["-11"]'>º</td>
+</tr>
+<tr class="odd">
+<td>20/3/2024</td>
+<td><input class="webex-solveme nospaces" size="4" data-answer='["5h47"]'></td>
+<td><input class="webex-solveme nospaces" size="5" data-answer='["11h51"]'></td>
+<td><input class="webex-solveme nospaces" size="5" data-answer='["17h54"]'></td>
+<td><input class="webex-solveme nospaces" size="5" data-answer='["12h07"]'></td>
+<td>
+<input class="webex-solveme nospaces" size="3" data-answer='["0"]'>º</td>
+</tr>
+<tr class="even">
+<td>20/4/2024</td>
+<td><input class="webex-solveme nospaces" size="4" data-answer='["5h27"]'></td>
+<td><input class="webex-solveme nospaces" size="5" data-answer='["11h42"]'></td>
+<td><input class="webex-solveme nospaces" size="5" data-answer='["17h57"]'></td>
+<td><input class="webex-solveme nospaces" size="5" data-answer='["12h30"]'></td>
+<td>
+<input class="webex-solveme nospaces" size="3" data-answer='["11"]'>º</td>
+</tr>
+<tr class="odd">
+<td>20/5/2024</td>
+<td>5h16</td>
+<td>11h40</td>
+<td>18h04</td>
+<td>12h48</td>
+<td>20º</td>
+</tr>
+<tr class="even">
+<td>21/6/2024</td>
+<td>5h17</td>
+<td>11h45</td>
+<td>18h13</td>
+<td>12h56</td>
+<td>23º</td>
+</tr>
+<tr class="odd">
+<td>21/7/2024</td>
+<td>5h25</td>
+<td>11h50</td>
+<td>18h14</td>
+<td>12h49</td>
+<td>20º</td>
+</tr>
+<tr class="even">
+<td>21/8/2024</td>
+<td>5h31</td>
+<td>11h46</td>
+<td>18h01</td>
+<td>12h31</td>
+<td>12º</td>
+</tr>
+<tr class="odd">
+<td>22/9/2024</td>
+<td>5h32</td>
+<td>11h36</td>
+<td>17h39</td>
+<td>12h07</td>
+<td>0º</td>
+</tr>
+<tr class="even">
+<td>21/10/2024</td>
+<td>5h35</td>
+<td>11h28</td>
+<td>17h20</td>
+<td>11h45</td>
+<td>-11º</td>
+</tr>
+<tr class="odd">
+<td>21/11/2024</td>
+<td>5h46</td>
+<td>11h29</td>
+<td>17h12</td>
+<td>11h26</td>
+<td>-20º</td>
+</tr>
+<tr class="even">
+<td>21/12/2024</td>
+<td>6h02</td>
+<td>11h41</td>
+<td>17h21</td>
+<td>11h19</td>
+<td>-23º</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Câu hỏi 9</strong>. Ngày dài nhất rơi vào tháng <input class="webex-solveme nospaces" size="1" data-answer='["6"]'>, ngày ngắn nhất rơi vào tháng <input class="webex-solveme nospaces" size="2" data-answer='["12"]'>, các tháng có ngày đêm dài gần bằng nhau: <input class="webex-solveme nospaces" size="1" data-answer='["3"]'> và <input class="webex-solveme nospaces" size="1" data-answer='["9"]'>.</p>
+<p><strong>Câu hỏi 10</strong>. Ngày Mặt Trời <strong>mọc sớm</strong> nhất trùng với ngày Mặt Trời <strong>lặn muộn</strong> nhất: <select class="webex-select"><option value="blank"></option>
+<option value="">TRUE</option>
+<option value="answer">FALSE</option></select>. Ngày Mặt Trời <strong>mọc sớm</strong> nhất trùng với ngày dài nhất: <select class="webex-select"><option value="blank"></option>
+<option value="">TRUE</option>
+<option value="answer">FALSE</option></select>.</p>
+</div>
+<hr>
+<p><strong>J</strong>. Bảng <a href="m%E1%BA%B7t-tr%E1%BB%9Di-v%C3%A0-%C4%91%C6%B0%E1%BB%9Dng-ch%C3%A2n-tr%E1%BB%9Di.html#tab:seoul">2.2</a> trình bày các dữ liệu tương ứng ở Seoul (38º Bắc). Để ý các điểm giống và khác so với Quy Nhơn. Nhận xét về sự biến thiên của xích vĩ trong cả hai trường hợp.</p>
+<div class="inline-table"><table class="table table-sm">
+<caption>
+<span id="tab:seoul">Table 2.2: </span> Bảng dữ liệu ở Seoul</caption>
+<thead><tr class="header">
+<th>Ngày</th>
+<th>Giờ mọc</th>
+<th>Giờ lặn</th>
+<th>Độ dài ngày</th>
+<th>Xích vĩ</th>
+<th></th>
+</tr></thead>
+<tbody>
+<tr class="odd">
+<td>20/1/2024</td>
+<td>7h44</td>
+<td>17h42</td>
+<td>9h58</td>
+<td>-20º</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>20/2/2024</td>
+<td>7h17</td>
+<td>18h16</td>
+<td>10h59</td>
+<td>-11º</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>20/3/2024</td>
+<td>6h36</td>
+<td>18h44</td>
+<td>12h08</td>
+<td>0º</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>20/4/2024</td>
+<td>5h50</td>
+<td>19h12</td>
+<td>13h22</td>
+<td>11º</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>20/5/2024</td>
+<td>5h19</td>
+<td>19h39</td>
+<td>14h20</td>
+<td>20º</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>21/6/2024</td>
+<td>5h11</td>
+<td>19h57</td>
+<td>14h46</td>
+<td>23º</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>21/7/2024</td>
+<td>5h27</td>
+<td>19h49</td>
+<td>14h22</td>
+<td>20º</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>21/8/2024</td>
+<td>5h53</td>
+<td>19h17</td>
+<td>13h24</td>
+<td>12º</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>22/9/2024</td>
+<td>6h20</td>
+<td>18h29</td>
+<td>12h09</td>
+<td>0º</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>21/10/2024</td>
+<td>6h46</td>
+<td>17h47</td>
+<td>11h01</td>
+<td>-11º</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>21/11/2024</td>
+<td>7h18</td>
+<td>17h17</td>
+<td>9h59</td>
+<td>-20º</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>21/12/2024</td>
+<td>7h43</td>
+<td>17h17</td>
+<td>9h34</td>
+<td>-23º</td>
+<td></td>
+</tr>
+</tbody>
+</table></div>
+<div class="webex-box">
+<p><strong>Câu hỏi 11</strong>. Mặt Trời mọc ở chính Đông đồng nghĩa với việc Mặt Trời mọc thẳng đứng khi nhô lên phía trên đường chân trời: <select class="webex-select"><option value="blank"></option>
+<option value="">TRUE</option>
+<option value="answer">FALSE</option></select>. Vậy góc tạo bởi hướng đi của Mặt Trời sau khi mọc so với đường chân trời có thể suy ra từ yếu tố nào? <select class="webex-select"><option value="blank"></option>
+<option value="answer">vĩ độ nơi quan sát</option>
+<option value="">kinh độ nơi quan sát</option></select></p>
+</div>
+</div>
+<div id="mở-rộng" class="section level2" number="2.3">
+<h2>
+<span class="header-section-number">2.3</span> Mở rộng<a class="anchor" aria-label="anchor" href="#m%E1%BB%9F-r%E1%BB%99ng"><i class="fas fa-link"></i></a>
+</h2>
+<p>Giờ Mặt Trời mọc/lặn có vẻ không biến thiên theo một quy tắc đơn giản nào. Thực vậy, ngoài việc phụ thuộc vào mùa, kinh độ, vĩ độ ở nơi quan sát, các thời điểm mọc lặn này còn phụ thuộc vào tốc độ di chuyển của Trái Đất quanh Mặt Trời: quỹ đạo của Trái Đất quanh Mặt Trời có hình ê-líp và tốc độ di chuyển không đều.</p>
+<p>Ngoài ra, giờ Mặt Trời mọc còn phụ thuộc vào độ cao quan sát so với mực nước biển (mọc sớm hơn 1 phút khi lên cao ~1500m). Stellarium không thể hiện được điều này.</p>
+<p>Đọc thêm về khái niệm <a href="https://en.wikipedia.org/wiki/Analemma">Analemma</a> trên wikipedia.</p>
+
+</div>
+</div>
+<script>
+
+/* update total correct if #webex-total_correct exists */
+update_total_correct = function() {
+  console.log("webex: update total_correct");
+
+  var t = document.getElementsByClassName("webex-total_correct");
+  for (var i = 0; i < t.length; i++) {
+    p = t[i].parentElement;
+    var correct = p.getElementsByClassName("webex-correct").length;
+    var solvemes = p.getElementsByClassName("webex-solveme").length;
+    var radiogroups = p.getElementsByClassName("webex-radiogroup").length;
+    var selects = p.getElementsByClassName("webex-select").length;
+
+    t[i].innerHTML = correct + " of " + (solvemes + radiogroups + selects) + " correct";
+  }
+}
+
+/* webex-solution button toggling function */
+b_func = function() {
+  console.log("webex: toggle hide");
+
+  var cl = this.parentElement.classList;
+  if (cl.contains('open')) {
+    cl.remove("open");
+  } else {
+    cl.add("open");
+  }
+}
+
+/* check answers */
+check_func = function() {
+  console.log("webex: check answers");
+
+  var cl = this.parentElement.classList;
+  if (cl.contains('unchecked')) {
+    cl.remove("unchecked");
+    this.innerHTML = "Hide Answers";
+  } else {
+    cl.add("unchecked");
+    this.innerHTML = "Show Answers";
+  }
+}
+
+/* function for checking solveme answers */
+solveme_func = function(e) {
+  console.log("webex: check solveme");
+
+  var real_answers = JSON.parse(this.dataset.answer);
+  var my_answer = this.value;
+  var cl = this.classList;
+  if (cl.contains("ignorecase")) {
+    my_answer = my_answer.toLowerCase();
+  }
+  if (cl.contains("nospaces")) {
+    my_answer = my_answer.replace(/ /g, "")
+  }
+
+  if (my_answer == "") {
+    cl.remove("webex-correct");
+    cl.remove("webex-incorrect");
+  } else if (real_answers.includes(my_answer)) {
+    cl.add("webex-correct");
+    cl.remove("webex-incorrect");
+  } else {
+    cl.add("webex-incorrect");
+    cl.remove("webex-correct");
+  }
+
+  // match numeric answers within a specified tolerance
+  if(this.dataset.tol > 0){
+    var tol = JSON.parse(this.dataset.tol);
+    var matches = real_answers.map(x => Math.abs(x - my_answer) < tol)
+    if (matches.reduce((a, b) => a + b, 0) > 0) {
+      cl.add("webex-correct");
+    } else {
+      cl.remove("webex-correct");
+    }
+  }
+
+  // added regex bit
+  if (cl.contains("regex")){
+    answer_regex = RegExp(real_answers.join("|"))
+    if (answer_regex.test(my_answer)) {
+      cl.add("webex-correct");
+    }
+  }
+
+  update_total_correct();
+}
+
+/* function for checking select answers */
+select_func = function(e) {
+  console.log("webex: check select");
+
+  var cl = this.classList
+
+  /* add style */
+  cl.remove("webex-incorrect");
+  cl.remove("webex-correct");
+  if (this.value == "answer") {
+    cl.add("webex-correct");
+  } else if (this.value != "blank") {
+    cl.add("webex-incorrect");
+  }
+
+  update_total_correct();
+}
+
+/* function for checking radiogroups answers */
+radiogroups_func = function(e) {
+  console.log("webex: check radiogroups");
+
+  var checked_button = document.querySelector('input[name=' + this.id + ']:checked');
+  var cl = checked_button.parentElement.classList;
+  var labels = checked_button.parentElement.parentElement.children;
+
+  /* get rid of styles */
+  for (i = 0; i < labels.length; i++) {
+    labels[i].classList.remove("webex-incorrect");
+    labels[i].classList.remove("webex-correct");
+  }
+
+  /* add style */
+  if (checked_button.value == "answer") {
+    cl.add("webex-correct");
+  } else {
+    cl.add("webex-incorrect");
+  }
+
+  update_total_correct();
+}
+
+window.onload = function() {
+  console.log("webex onload");
+  /* set up solution buttons */
+  var buttons = document.getElementsByTagName("button");
+
+  for (var i = 0; i < buttons.length; i++) {
+    if (buttons[i].parentElement.classList.contains('webex-solution')) {
+      buttons[i].onclick = b_func;
+    }
+  }
+
+  var check_sections = document.getElementsByClassName("webex-check");
+  console.log("check:", check_sections.length);
+  for (var i = 0; i < check_sections.length; i++) {
+    check_sections[i].classList.add("unchecked");
+
+    let btn = document.createElement("button");
+    btn.innerHTML = "Show Answers";
+    btn.classList.add("webex-check-button");
+    btn.onclick = check_func;
+    check_sections[i].appendChild(btn);
+
+    let spn = document.createElement("span");
+    spn.classList.add("webex-total_correct");
+    check_sections[i].appendChild(spn);
+  }
+
+  /* set up webex-solveme inputs */
+  var solveme = document.getElementsByClassName("webex-solveme");
+
+  for (var i = 0; i < solveme.length; i++) {
+    /* make sure input boxes don't auto-anything */
+    solveme[i].setAttribute("autocomplete","off");
+    solveme[i].setAttribute("autocorrect", "off");
+    solveme[i].setAttribute("autocapitalize", "off");
+    solveme[i].setAttribute("spellcheck", "false");
+    solveme[i].value = "";
+
+    /* adjust answer for ignorecase or nospaces */
+    var cl = solveme[i].classList;
+    var real_answer = solveme[i].dataset.answer;
+    if (cl.contains("ignorecase")) {
+      real_answer = real_answer.toLowerCase();
+    }
+    if (cl.contains("nospaces")) {
+      real_answer = real_answer.replace(/ /g, "");
+    }
+    solveme[i].dataset.answer = real_answer;
+
+    /* attach checking function */
+    solveme[i].onkeyup = solveme_func;
+    solveme[i].onchange = solveme_func;
+
+    solveme[i].insertAdjacentHTML("afterend", " <span class='webex-icon'></span>")
+  }
+
+  /* set up radiogroups */
+  var radiogroups = document.getElementsByClassName("webex-radiogroup");
+  for (var i = 0; i < radiogroups.length; i++) {
+    radiogroups[i].onchange = radiogroups_func;
+  }
+
+  /* set up selects */
+  var selects = document.getElementsByClassName("webex-select");
+  for (var i = 0; i < selects.length; i++) {
+    selects[i].onchange = select_func;
+    selects[i].insertAdjacentHTML("afterend", " <span class='webex-icon'></span>")
+  }
+
+  update_total_correct();
+}
+
+</script><script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script><script>
+  var myTimer;
+  
+  function checkLoginStatus() {
+    if (!window.netlifyIdentity.currentUser()) {
+      // If user is not logged in, show the modal
+      window.location.href = 'login.html';
+    } else {
+      injectLogoutButton();
+      stopTimer();
+    }
+  }
+  
+  function startTimer(delay) {
+    myTimer = setTimeout(checkLoginStatus, delay);
+  }
+  
+  function stopTimer() {
+    clearTimeout(myTimer);
+  }
+    
+  // Function to create logout button and inject it under .book-extra
+  function injectLogoutButton() {
+    var bookExtra = document.querySelector('#main-nav nav .book-extra');
+    if (bookExtra) {
+      var logoutButton = document.createElement('div');
+      logoutButton.innerHTML = '<button id="logoutButton" class="btn btn-sm btn-outline-danger">Đăng xuất</button>';
+      bookExtra.appendChild(logoutButton);
+
+      document.getElementById('logoutButton').addEventListener('click', function () {
+        if (window.netlifyIdentity) {
+          window.netlifyIdentity.logout();
+          startTimer(1000);
+          logoutButton.remove();
+        } else {
+          console.error('Netlify Identity not initialized yet. Check that it is loaded in your HTML body.');
+        }
+      });
+    }
+  }
+
+  function removeElements() {
+    // Remove unnecessary elements
+    var bookSource = document.getElementById('book-source');
+    if (bookSource) {
+      bookSource.remove();
+    }
+    var bookRepo = document.getElementById('book-repo');
+    if (bookRepo) {
+      bookRepo.remove();
+    }
+    var bookEdit = document.getElementById('book-edit');
+    if (bookEdit) {
+      bookEdit.remove();
+    }
+  }
+
+  // Call the function to check login status when the page is loaded or shown
+  window.addEventListener('pageshow', function() {
+    removeElements();
+    startTimer(5000);
+  });
+
+</script><div class="chapter-nav">
+<div class="prev"><a href="h%E1%BB%87-t%E1%BB%8Da-%C4%91%E1%BB%99-tr%E1%BB%9Di.html"><span class="header-section-number">1</span> Hệ tọa độ trời</a></div>
+<div class="next"><a href="quan-s%C3%A1t-sao-th%E1%BB%A7y-v%C3%A0-sao-kim.html"><span class="header-section-number">3</span> Quan sát Sao Thủy và Sao Kim</a></div>
+</div></main><div class="col-md-3 col-lg-2 d-none d-md-block sidebar sidebar-chapter">
+    <nav id="toc" data-toggle="toc" aria-label="On this page"><h2>On this page</h2>
+      <ul class="nav navbar-nav">
+<li><a class="nav-link" href="#m%E1%BA%B7t-tr%E1%BB%9Di-v%C3%A0-%C4%91%C6%B0%E1%BB%9Dng-ch%C3%A2n-tr%E1%BB%9Di"><span class="header-section-number">2</span> Mặt Trời và đường chân trời</a></li>
+<li><a class="nav-link" href="#m%E1%BB%A5c-ti%C3%AAu-1"><span class="header-section-number">2.1</span> Mục tiêu</a></li>
+<li><a class="nav-link" href="#th%E1%BB%B1c-h%C3%A0nh-1"><span class="header-section-number">2.2</span> Thực hành</a></li>
+<li><a class="nav-link" href="#m%E1%BB%9F-r%E1%BB%99ng"><span class="header-section-number">2.3</span> Mở rộng</a></li>
+</ul>
+
+      <div class="book-extra">
+        <ul class="list-unstyled">
+<li><a id="book-source" href="https://github.com/rstudio/bookdown-demo/blob/master/02-sun-horizon.Rmd">View source <i class="fab fa-github"></i></a></li>
+          <li><a id="book-edit" href="https://github.com/rstudio/bookdown-demo/edit/master/02-sun-horizon.Rmd">Edit this page <i class="fab fa-github"></i></a></li>
+        </ul>
+</div>
+    </nav>
+</div>
+
+</div>
+</div> <!-- .container -->
+
+<footer class="bg-primary text-light mt-5"><div class="container"><div class="row">
+
+  <div class="col-12 col-md-6 mt-3">
+    <p>"<strong>Học thiên văn qua Stellarium</strong>" was written by Trần Trung Quân. It was last built on 2024-04-10.</p>
+  </div>
+
+  <div class="col-12 col-md-6 mt-3">
+    <p>This book was built by the <a class="text-light" href="https://bookdown.org">bookdown</a> R package.</p>
+  </div>
+
+</div></div>
+</footer><!-- dynamically load mathjax for compatibility with self-contained --><script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/latest.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script><script type="text/x-mathjax-config">const popovers = document.querySelectorAll('a.footnote-ref[data-toggle="popover"]');
+for (let popover of popovers) {
+  const div = document.createElement('div');
+  div.setAttribute('style', 'position: absolute; top: 0, left:0; width:0, height:0, overflow: hidden; visibility: hidden;');
+  div.innerHTML = popover.getAttribute('data-content');
+
+  var has_math = div.querySelector("span.math");
+  if (has_math) {
+    document.body.appendChild(div);
+    MathJax.Hub.Queue(["Typeset", MathJax.Hub, div]);
+    MathJax.Hub.Queue(function() {
+      popover.setAttribute('data-content', div.innerHTML);
+      document.body.removeChild(div);
+    })
+  }
+}
+</script>
+</body>
+</html>

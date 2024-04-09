@@ -30,34 +30,30 @@ Mục tiêu thứ hai là hiểu công thức và ghi nhớ Định luật thứ
 
 ---
 
-**H**. Tăng thời gian sao cho Sao Kim (*Mercury*) đi được một vòng và điền vào cột *P (ngày)* trong Bảng \@ref(tab:kepler) (± 1 ngày).
+**H**. Tăng thời gian sao cho Sao Kim (*Mercury*) đi được một vòng (± 1 ngày) và điền vào cột *P (ngày)* và *P (năm)* trong Bảng \@ref(tab:kepler) (lấy số ngày chia cho 365,25).
 
-**I**. Chỉnh lại ngày giờ về 1/1/2024, 6am. Làm tương tự cho Sao Thủy (*Venus*).
+**I**. Chỉnh lại ngày về 1/1/2024 (nếu muốn). Làm tương tự cho Sao Thủy (*Venus*).
 
-**J**. Phóng to trường nhìn lên khoảng 4-5º. Chỉnh lại ngày giờ về 1/1/2024, 6am. Làm tương tự cho Sao Hỏa (*Mars*) (± 1 tháng).
+**J**. Phóng to trường nhìn lên khoảng 4-5º. Làm tương tự cho Sao Hỏa (*Mars*) (± 1 tháng, lấy số tháng chia cho 12 để điền vào cột *P (năm)*).
 
-**J**. Phóng to trường nhìn lên khoảng 17-20º. Chỉnh lại ngày giờ về 1/1/2024, 6am. Làm tương tự cho Sao Mộc (*Jupiter*) và Sao Thổ (*Saturn*) (± một vài tháng).
+**J**. Phóng to trường nhìn lên khoảng 17-20º. Làm tương tự cho Sao Mộc (*Jupiter*) và Sao Thổ (*Saturn*) (± một vài tháng).
+
+**K**. Tính bán trục lớn *a* dựa theo công thức $P^2 = a^3$
+
+**L**. Tính sai số so với dữ liệu chuẩn dựa theo công thức 
+
+$$\left(\frac{\text{giá trị tính được}}{\text{giá trị thực tế}} - 1\right) \times 100\%$$
 
 
-| Hành tinh | P (ngày) | P (năm) | $P^2$ | a (A.U.) | a thực tế (A.U.) | Sai số (%) |
-| --------- | -------- | ------- | ----- | ----- | --------- | ------- |
-| Sao Thủy | `r fitb(88, tol=4)` | `r fitb(0.24, tol=0.01)` |  | `r fitb(0.387, tol=0.04)` | 0.387 | `r fitb(0.01, tol=100)` |
-| Sao Kim | `r fitb(224.7, tol=10)` |  |  | `r fitb(0.723, tol=0.07)` | 0.723 | `r fitb(0.01, tol=10)` |
-| Trái Đất | 365.24 | 1 | 1 | 1 | 1 | 0 |
-| Sao Hỏa | - | `r fitb(1.88, tol=0.1)` |  | `r fitb(1.523, tol=0.1)` | 1.523 | `r fitb(0.01, tol=10)` |
-| Sao Mộc | - | `r fitb(11.86, tol=0.6)` |  | `r fitb(5.204, tol=0.5)` | 5.204 | `r fitb(0.01, tol=10)` |
-| Sao Thổ | - | `r fitb(29.46, tol=1.5)` |  | `r fitb(9.582, tol=1)` | 9.582 | `r fitb(0.01, tol=10)` |
+::: {.webex-box}
+| Hành tinh | P (ngày) | P (năm) | a (A.U.) | a thực tế (A.U.) | Sai số (%) |
+| --------- | -------- | ------- | ----- | --------- | ------- |
+| Sao Thủy | `r fitb(88, tol=4)` | `r fitb(0.24, tol=0.01)` | `r fitb(0.387, tol=0.04)` | 0.387 | `r fitb(0.01, tol=100)` |
+| Sao Kim | `r fitb(225, tol=10)` | `r fitb(0.62, tol=0.02)` | `r fitb(0.723, tol=0.07)` | 0.723 | `r fitb(0.01, tol=10)` |
+| Trái Đất | 365.24 | 1 | 1 | 1 | 0 |
+| Sao Hỏa | | `r fitb(1.88, tol=0.1)` | `r fitb(1.523, tol=0.1)` | 1.523 | `r fitb(0.01, tol=10)` |
+| Sao Mộc | | `r fitb(11.86, tol=0.6)` | `r fitb(5.204, tol=0.5)` | 5.204 | `r fitb(0.01, tol=10)` |
+| Sao Thổ | | `r fitb(29.46, tol=1.5)` | `r fitb(9.582, tol=1)` | 9.582 | `r fitb(0.01, tol=10)` |
 
 : (\#tab:kepler) Bảng tổng hợp
-
----
-
-**K**. Điền vào cột *P (năm)* (nếu chưa điền) bằng cách chia chu kỳ theo ngày cho 365.25.
-
-**L**. Tính $P^2$ từ cột *P (năm)*.
-
-**M**. Tính các bán trục lớn *a* dựa theo công thức $P^2 = a^3$
-
-**O**. Tính sai số so với dữ liệu chuẩn dựa theo công thức 
-
-[(giá trị tính được) - (giá trị thực tế)]/(giá trị thực tế) x 100%
+:::

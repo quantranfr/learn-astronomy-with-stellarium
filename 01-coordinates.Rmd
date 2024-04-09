@@ -35,33 +35,36 @@ Trong khi đọc, chú ý đến các khái niệm sau:
 
 **F**. Tắt hiển thị hệ tọa độ xích đạo (_Equatorial grid_); bật hiển thị hệ tọa độ chân trời (_Azimuthal_). Đặt trường nhìn (_FOV_) vào khoảng 60º.
 
-> **Câu hỏi 1**. Có một ngôi sao sáng ở gần đường chân trời phía Nam (±10º hai bên kinh tuyến trời). Nó tên là gì?
+::: {.webex-box}
+**Câu hỏi 1**. Có một ngôi sao sáng ở gần đường chân trời phía Nam (±10º hai bên kinh tuyến trời). Nó tên là gì?
 `r fitb("Achernar", ignore_case=TRUE)`
->
-> **Câu hỏi 2**. Cho biết độ cao (_Altitude_) của ngôi sao đó so với đường chân trời (làm tròn đến 1º, ví dụ 5º30' sẽ được làm tròn thành 6º):
+
+**Câu hỏi 2**. Cho biết độ cao (_Altitude_) của ngôi sao đó so với đường chân trời (làm tròn đến 1º, ví dụ 5º30' sẽ được làm tròn thành 6º):
 `r fitb(18)`º
->
-> **Câu hỏi 3**. Cho biết góc phương vị (_Azimuth_) của ngôi sao này (làm tròn đến 1º):
+
+**Câu hỏi 3**. Cho biết góc phương vị (_Azimuth_) của ngôi sao này (làm tròn đến 1º):
 `r fitb(172)`º
+:::
 
 **G**. Lùi thời gian lại 1 tháng (chỉnh ngày thành 20/2/2024, vẫn giữ nguyên giờ là 12h30pm).
 
-> **Câu hỏi 4**. Ngôi sao mà bạn xác định ở câu hỏi 1 có di chuyển so với vị trí trước đó không?
+::: {.webex-box}
+**Câu hỏi 4**. Ngôi sao mà bạn xác định ở câu hỏi 1 có di chuyển so với vị trí trước đó không?
 `r torf(TRUE)`
->
-> **Câu hỏi 5**. Giờ đây cao độ của nó là bao nhiêu (làm tròn đến 1º)?
+
+**Câu hỏi 5**. Giờ đây cao độ của nó là bao nhiêu (làm tròn đến 1º)?
 `r fitb(11)`º
->
-> **Câu hỏi 6**. Và góc phương vị của nó (làm tròn đến 1º)?
+
+**Câu hỏi 6**. Và góc phương vị của nó (làm tròn đến 1º)?
 `r fitb(158)`º
->
-> **Câu hỏi 7**. Cao độ và góc phương vị trong câu 5. và 6. có giống với kết quả của câu hỏi 2. và 3. không?
+
+**Câu hỏi 7**. Cao độ và góc phương vị trong câu 5. và 6. có giống với kết quả của câu hỏi 2. và 3. không?
 `r torf(FALSE)`
-
-
-**H**. Chỉnh lại ngày giờ thành 20/3/2024, 12h30pm
+:::
 
 ---
+
+**H**. Chỉnh lại ngày giờ thành 20/3/2024, 12h30pm
 
 **I**. Quay góc nhìn về đường chân trời phía Bắc (_N_).
 
@@ -69,13 +72,15 @@ Trong khi đọc, chú ý đến các khái niệm sau:
 
 **K**. Dùng chức năng tìm kiếm để tìm sao Merak. Đặt sao này vào giữa màn hình và chỉnh trường nhìn (FOV) về còn khoảng 20º.
 
-> **Câu hỏi 8**. Có một ngôi sao sáng ngay phía trên Merak. Nó tên là gì?
+::: {.webex-box}
+**Câu hỏi 8**. Có một ngôi sao sáng ngay phía trên Merak. Nó tên là gì?
 `r fitb("Dubhe", ignore_case=TRUE, width=10)`
 và có cao độ là bao nhiêu (làm tròn đến 1º)?
 `r fitb(-12)`º
->
-> **Câu hỏi 9**. Ta có thể nhìn thấy Merak và ngôi sao vừa rồi vào ngày giờ lúc đó không?
+
+**Câu hỏi 9**. Ta có thể nhìn thấy Merak và ngôi sao vừa rồi vào ngày giờ lúc đó không?
 `r torf(FALSE)`
+:::
 
 ---
 
@@ -85,7 +90,8 @@ và có cao độ là bao nhiêu (làm tròn đến 1º)?
 
 **N**. Tắt hệ tọa độ chân trời (_Azimuthal_) và bật hệ tọa độ xích đạo (_Equatorial_).
 
-> **Câu hỏi 10**. Tìm xích kinh (_Right Ascension_):
+::: {.webex-box}
+**Câu hỏi 10**. Tìm xích kinh (_Right Ascension_):
 `r fitb(22)` h
 `r fitb(58)` m
 `r fitb(58, tol=1.1)` s
@@ -93,17 +99,20 @@ và xích vĩ (_Declination_):
 `r fitb(-29)` º
 `r fitb(30, tol=1.1)` '
 của Fomalhaut.
->
-> **Câu hỏi 11**. Fomalhaut nằm trong chòm sao nào?
+
+**Câu hỏi 11**. Fomalhaut nằm trong chòm sao nào?
 `r mcq(c(answer="Nam Ngư (_Piscis Austrinus_)", 'Ba Giang (_Eridanus_, "ba" = sóng)', "Phượng Hoàng (_Phoenix_)", "Ngọc Phu (_Sculptor_)"))`
+:::
 
 **O**. O. Tiến thời gian thêm một tháng (20/4/2024 lúc 12h30pm).
 
-> **Câu hỏi 12**. Fomalhaut có di chuyển so với vị trí lúc trước không?
+::: {.webex-box}
+**Câu hỏi 12**. Fomalhaut có di chuyển so với vị trí lúc trước không?
 `r torf(TRUE)`
->
-> **Câu hỏi 13**. Xích kinh (_Right Ascension_) và xích vĩ (_Declination_) của nó có thay đổi rõ rệt không?
+
+**Câu hỏi 13**. Xích kinh (_Right Ascension_) và xích vĩ (_Declination_) của nó có thay đổi rõ rệt không?
 `r torf(FALSE)`
+:::
 
 ---
 
@@ -111,34 +120,38 @@ của Fomalhaut.
 
 **Q**. Thời điểm này được chọn là do nó xấp xỉ với (thời điểm) Xuân phân (_Vernal Equinox_) của năm 2024. Xích kinh (đo bằng giờ-phút-giây) được tính bắt đầu từ một điểm đặc biệt trên bầu trời, gọi là Điểm (xuân) phân (trong tiếng Anh cũng gọi là _Vernal Equinox_).
 
-**R**. Chọn Mặt Trời và đặt vào giữa màn hình. Do ta đang ở xấp xỉ thời điểm Xuân phân, Mặt trời gần như ở giao điểm của hai đường quan trọng trên bầu trời.
+**R**. Chọn Mặt Trời và đặt vào giữa màn hình. Do ta đang ở xấp xỉ thời điểm Xuân phân, Mặt Trời gần như ở giao điểm của hai đường quan trọng trên bầu trời.
 
-> **Câu hỏi 14**. Hai đường đó là?
+::: {.webex-box}
+**Câu hỏi 14**. Hai đường đó là?
 `r longmcq(c(
      "đường thẳng (_Straight_) và đường chéo (_Diagonal_)",
      "kinh tuyến trời (_Meridian_) và đường chân trời (_Horizon_)",
      answer="xích đạo trời (_Celestial equator_) và hoàng đạo (_Ecliptic_)",
      "xích đạo trời (_Celestial equator_) và kinh tuyến trời (_Meridian_)"
    ))`  
->
-> **Câu hỏi 15**. Giao điểm của hai đường đó có xích kinh là:
+
+**Câu hỏi 15**. Giao điểm của hai đường đó có xích kinh là:
 `r fitb(0)` h 
 `r fitb(0)` m 
 `r fitb(0)` s
+:::
 
----
+## Kết luận
 
 **S**. Giờ đây bạn đã sử dụng cả hai hệ tọa độ (chân trời và xích đạo). Hãy trả lời các câu hỏi sau:
 
-> **Câu hỏi 16**. Hệ tọa độ nào tốt hơn trong việc định vị thiên thể mà không phải quan tâm đến ngày, giờ và vị trí quan sát?
+::: {.webex-box}
+**Câu hỏi 16**. Hệ tọa độ nào tốt hơn trong việc định vị thiên thể mà không phải quan tâm đến ngày, giờ và vị trí quan sát?
 `r mcq(c(
     "Hệ tọa độ chân trời (_Azimuthal_)",
     answer="Hệ tọa độ xích đạo (_Equatorial_)"
   ))`
->
-> **Câu hỏi 17**. Hệ tọa độ nào nên được dùng trong quan sát thiên văn?
+
+**Câu hỏi 17**. Hệ tọa độ nào nên được dùng trong quan sát thiên văn?
 `r mcq(c(
     "Hệ tọa độ chân trời (_Azimuthal_)",
     "Hệ tọa độ xích đạo (_Equatorial_)",
     answer="Còn tùy"
   ))`
+:::

@@ -30,34 +30,30 @@ Mục tiêu thứ hai là hiểu công thức và ghi nhớ Định luật thứ
 
 ---
 
-**H**. Tăng thời gian sao cho Sao Kim (*Mercury*) đi được một vòng và điền vào cột *P (ngày)* trong Bảng \@ref(tab:kepler) (± 1 ngày).
+**H**. Tăng thời gian sao cho Sao Kim (*Mercury*) đi được một vòng (± 1 ngày) và điền vào cột *P (ngày)* và *P (năm)* trong Bảng \@ref(tab:kepler) (lấy số ngày chia cho 365,25).
 
-**I**. Chỉnh lại ngày giờ về 1/1/2024, 6am. Làm tương tự cho Sao Thủy (*Venus*).
+**I**. Chỉnh lại ngày về 1/1/2024 (nếu muốn). Làm tương tự cho Sao Thủy (*Venus*).
 
-**J**. Phóng to trường nhìn lên khoảng 4-5º. Chỉnh lại ngày giờ về 1/1/2024, 6am. Làm tương tự cho Sao Hỏa (*Mars*) (± 1 tháng).
+**J**. Phóng to trường nhìn lên khoảng 4-5º. Làm tương tự cho Sao Hỏa (*Mars*) (± 1 tháng, lấy số tháng chia cho 12 để điền vào cột *P (năm)*).
 
-**J**. Phóng to trường nhìn lên khoảng 17-20º. Chỉnh lại ngày giờ về 1/1/2024, 6am. Làm tương tự cho Sao Mộc (*Jupiter*) và Sao Thổ (*Saturn*) (± một vài tháng).
+**J**. Phóng to trường nhìn lên khoảng 17-20º. Làm tương tự cho Sao Mộc (*Jupiter*) và Sao Thổ (*Saturn*) (± một vài tháng).
+
+**K**. Tính bán trục lớn *a* dựa theo công thức $P^2 = a^3$
+
+**L**. Tính sai số so với dữ liệu chuẩn dựa theo công thức 
+
+$$\left(\frac{\text{giá trị tính được}}{\text{giá trị thực tế}} - 1\right) \times 100\%$$
 
 
-| Hành tinh | P (ngày) | P (năm) | $P^2$ | a (A.U.) | a thực tế (A.U.) | Sai số (%) |
-| --------- | -------- | ------- | ----- | ----- | --------- | ------- |
-| Sao Thủy | <input class='webex-solveme nospaces' data-tol='4' size='2' data-answer='["88"]'/> | <input class='webex-solveme nospaces' data-tol='0.01' size='4' data-answer='["0.24",".24"]'/> |  | <input class='webex-solveme nospaces' data-tol='0.04' size='5' data-answer='["0.387",".387"]'/> | 0.387 | <input class='webex-solveme nospaces' data-tol='100' size='4' data-answer='["0.01",".01"]'/> |
-| Sao Kim | <input class='webex-solveme nospaces' data-tol='10' size='5' data-answer='["224.7"]'/> |  |  | <input class='webex-solveme nospaces' data-tol='0.07' size='5' data-answer='["0.723",".723"]'/> | 0.723 | <input class='webex-solveme nospaces' data-tol='10' size='4' data-answer='["0.01",".01"]'/> |
-| Trái Đất | 365.24 | 1 | 1 | 1 | 1 | 0 |
-| Sao Hỏa | - | <input class='webex-solveme nospaces' data-tol='0.1' size='4' data-answer='["1.88"]'/> |  | <input class='webex-solveme nospaces' data-tol='0.1' size='5' data-answer='["1.523"]'/> | 1.523 | <input class='webex-solveme nospaces' data-tol='10' size='4' data-answer='["0.01",".01"]'/> |
-| Sao Mộc | - | <input class='webex-solveme nospaces' data-tol='0.6' size='5' data-answer='["11.86"]'/> |  | <input class='webex-solveme nospaces' data-tol='0.5' size='5' data-answer='["5.204"]'/> | 5.204 | <input class='webex-solveme nospaces' data-tol='10' size='4' data-answer='["0.01",".01"]'/> |
-| Sao Thổ | - | <input class='webex-solveme nospaces' data-tol='1.5' size='5' data-answer='["29.46"]'/> |  | <input class='webex-solveme nospaces' data-tol='1' size='5' data-answer='["9.582"]'/> | 9.582 | <input class='webex-solveme nospaces' data-tol='10' size='4' data-answer='["0.01",".01"]'/> |
+::: {.webex-box}
+| Hành tinh | P (ngày) | P (năm) | a (A.U.) | a thực tế (A.U.) | Sai số (%) |
+| --------- | -------- | ------- | ----- | --------- | ------- |
+| Sao Thủy | <input class='webex-solveme nospaces' data-tol='4' size='2' data-answer='["88"]'/> | <input class='webex-solveme nospaces' data-tol='0.01' size='4' data-answer='["0.24",".24"]'/> | <input class='webex-solveme nospaces' data-tol='0.04' size='5' data-answer='["0.387",".387"]'/> | 0.387 | <input class='webex-solveme nospaces' data-tol='100' size='4' data-answer='["0.01",".01"]'/> |
+| Sao Kim | <input class='webex-solveme nospaces' data-tol='10' size='3' data-answer='["225"]'/> | <input class='webex-solveme nospaces' data-tol='0.02' size='4' data-answer='["0.62",".62"]'/> | <input class='webex-solveme nospaces' data-tol='0.07' size='5' data-answer='["0.723",".723"]'/> | 0.723 | <input class='webex-solveme nospaces' data-tol='10' size='4' data-answer='["0.01",".01"]'/> |
+| Trái Đất | 365.24 | 1 | 1 | 1 | 0 |
+| Sao Hỏa | | <input class='webex-solveme nospaces' data-tol='0.1' size='4' data-answer='["1.88"]'/> | <input class='webex-solveme nospaces' data-tol='0.1' size='5' data-answer='["1.523"]'/> | 1.523 | <input class='webex-solveme nospaces' data-tol='10' size='4' data-answer='["0.01",".01"]'/> |
+| Sao Mộc | | <input class='webex-solveme nospaces' data-tol='0.6' size='5' data-answer='["11.86"]'/> | <input class='webex-solveme nospaces' data-tol='0.5' size='5' data-answer='["5.204"]'/> | 5.204 | <input class='webex-solveme nospaces' data-tol='10' size='4' data-answer='["0.01",".01"]'/> |
+| Sao Thổ | | <input class='webex-solveme nospaces' data-tol='1.5' size='5' data-answer='["29.46"]'/> | <input class='webex-solveme nospaces' data-tol='1' size='5' data-answer='["9.582"]'/> | 9.582 | <input class='webex-solveme nospaces' data-tol='10' size='4' data-answer='["0.01",".01"]'/> |
 
 : (\#tab:kepler) Bảng tổng hợp
-
----
-
-**K**. Điền vào cột *P (năm)* (nếu chưa điền) bằng cách chia chu kỳ theo ngày cho 365.25.
-
-**L**. Tính $P^2$ từ cột *P (năm)*.
-
-**M**. Tính các bán trục lớn *a* dựa theo công thức $P^2 = a^3$
-
-**O**. Tính sai số so với dữ liệu chuẩn dựa theo công thức 
-
-[(giá trị tính được) - (giá trị thực tế)]/(giá trị thực tế) x 100%
+:::
