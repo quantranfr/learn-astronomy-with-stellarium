@@ -104,7 +104,7 @@ của Fomalhaut.
 `r mcq(c(answer="Nam Ngư (_Piscis Austrinus_)", 'Ba Giang (_Eridanus_, "ba" = sóng)', "Phượng Hoàng (_Phoenix_)", "Ngọc Phu (_Sculptor_)"))`
 :::
 
-**O**. O. Tiến thời gian thêm một tháng (20/4/2024 lúc 12h30pm).
+**O**. Tiến thời gian thêm một tháng (20/4/2024 lúc 12h30pm).
 
 ::: {.webex-box}
 **Câu hỏi 12**. Fomalhaut có di chuyển so với vị trí lúc trước không?

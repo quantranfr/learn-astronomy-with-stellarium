@@ -104,7 +104,7 @@ của Fomalhaut.
 <select class='webex-select'><option value='blank'></option><option value='answer'>Nam Ngư (_Piscis Austrinus_)</option><option value=''>Ba Giang (_Eridanus_, "ba" = sóng)</option><option value=''>Phượng Hoàng (_Phoenix_)</option><option value=''>Ngọc Phu (_Sculptor_)</option></select>
 :::
 
-**O**. O. Tiến thời gian thêm một tháng (20/4/2024 lúc 12h30pm).
+**O**. Tiến thời gian thêm một tháng (20/4/2024 lúc 12h30pm).
 
 ::: {.webex-box}
 **Câu hỏi 12**. Fomalhaut có di chuyển so với vị trí lúc trước không?
@@ -124,7 +124,7 @@ của Fomalhaut.
 
 ::: {.webex-box}
 **Câu hỏi 14**. Hai đường đó là?
-<div class='webex-radiogroup' id='radio_ETKFTHSHCV'><label><input type="radio" autocomplete="off" name="radio_ETKFTHSHCV" value=""></input> <span>đường thẳng (_Straight_) và đường chéo (_Diagonal_)</span></label><label><input type="radio" autocomplete="off" name="radio_ETKFTHSHCV" value=""></input> <span>kinh tuyến trời (_Meridian_) và đường chân trời (_Horizon_)</span></label><label><input type="radio" autocomplete="off" name="radio_ETKFTHSHCV" value="answer"></input> <span>xích đạo trời (_Celestial equator_) và hoàng đạo (_Ecliptic_)</span></label><label><input type="radio" autocomplete="off" name="radio_ETKFTHSHCV" value=""></input> <span>xích đạo trời (_Celestial equator_) và kinh tuyến trời (_Meridian_)</span></label></div>
+<div class='webex-radiogroup' id='radio_JORXYEUVIO'><label><input type="radio" autocomplete="off" name="radio_JORXYEUVIO" value=""></input> <span>đường thẳng (_Straight_) và đường chéo (_Diagonal_)</span></label><label><input type="radio" autocomplete="off" name="radio_JORXYEUVIO" value=""></input> <span>kinh tuyến trời (_Meridian_) và đường chân trời (_Horizon_)</span></label><label><input type="radio" autocomplete="off" name="radio_JORXYEUVIO" value="answer"></input> <span>xích đạo trời (_Celestial equator_) và hoàng đạo (_Ecliptic_)</span></label><label><input type="radio" autocomplete="off" name="radio_JORXYEUVIO" value=""></input> <span>xích đạo trời (_Celestial equator_) và kinh tuyến trời (_Meridian_)</span></label></div>
   
 
 **Câu hỏi 15**. Giao điểm của hai đường đó có xích kinh là:

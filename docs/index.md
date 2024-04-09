@@ -13,6 +13,7 @@ description: |
   set in the _output.yml file.
 biblio-style: apalike
 csl: chicago-fullnote-bibliography.csl
+lang: vi # change Chapter to Chương in pdf
 ---
 
 # Giới thiệu {-}

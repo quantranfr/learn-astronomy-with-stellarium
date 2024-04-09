@@ -64,6 +64,15 @@
 \providecommand{\tightlist}{%
   \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
 \setcounter{secnumdepth}{5}
+\ifLuaTeX
+\usepackage[bidi=basic]{babel}
+\else
+\usepackage[bidi=default]{babel}
+\fi
+\babelprovide[main,import]{vietnamese}
+% get rid of language-specific shorthands (see #6817):
+\let\LanguageShortHands\languageshorthands
+\def\languageshorthands#1{}
 \usepackage{booktabs}
 \ifLuaTeX
   \usepackage{selnolig}  % disable illegal ligatures
@@ -76,6 +85,7 @@
 \hypersetup{
   pdftitle={Học thiên văn qua Stellarium},
   pdfauthor={Trần Trung Quân},
+  pdflang={vi},
   hidelinks,
   pdfcreator={LaTeX via pandoc}}
 
@@ -235,7 +245,7 @@ của Fomalhaut.
   \end{enumerate}
 \end{itemize}
 
-\textbf{O}. O. Tiến thời gian thêm một tháng (20/4/2024 lúc 12h30pm).
+\textbf{O}. Tiến thời gian thêm một tháng (20/4/2024 lúc 12h30pm).
 
 \textbf{Câu hỏi 12}. Fomalhaut có di chuyển so với vị trí lúc trước không?
 TRUE / FALSE
