@@ -8,7 +8,6 @@ bookdown::bs4_book:
   includes:
     after_body:
       - ./webex.js
-      - ./netlify-auth.js
   md_extensions: -smart
 bookdown::pdf_book:
   includes:

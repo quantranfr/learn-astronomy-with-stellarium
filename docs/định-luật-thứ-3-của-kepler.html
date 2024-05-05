@@ -397,69 +397,6 @@ window.onload = function() {
   update_total_correct();
 }
 
-</script><script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script><script>
-  var myTimer;
-  
-  function checkLoginStatus() {
-    if (!window.netlifyIdentity.currentUser()) {
-      // If user is not logged in, show the modal
-      window.location.href = 'login.html';
-    } else {
-      injectLogoutButton();
-      stopTimer();
-    }
-  }
-  
-  function startTimer(delay) {
-    myTimer = setTimeout(checkLoginStatus, delay);
-  }
-  
-  function stopTimer() {
-    clearTimeout(myTimer);
-  }
-    
-  // Function to create logout button and inject it under .book-extra
-  function injectLogoutButton() {
-    var bookExtra = document.querySelector('#main-nav nav .book-extra');
-    if (bookExtra) {
-      var logoutButton = document.createElement('div');
-      logoutButton.innerHTML = '<button id="logoutButton" class="btn btn-sm btn-outline-danger">Đăng xuất</button>';
-      bookExtra.appendChild(logoutButton);
-
-      document.getElementById('logoutButton').addEventListener('click', function () {
-        if (window.netlifyIdentity) {
-          window.netlifyIdentity.logout();
-          startTimer(1000);
-          logoutButton.remove();
-        } else {
-          console.error('Netlify Identity not initialized yet. Check that it is loaded in your HTML body.');
-        }
-      });
-    }
-  }
-
-  function removeElements() {
-    // Remove unnecessary elements
-    var bookSource = document.getElementById('book-source');
-    if (bookSource) {
-      bookSource.remove();
-    }
-    var bookRepo = document.getElementById('book-repo');
-    if (bookRepo) {
-      bookRepo.remove();
-    }
-    var bookEdit = document.getElementById('book-edit');
-    if (bookEdit) {
-      bookEdit.remove();
-    }
-  }
-
-  // Call the function to check login status when the page is loaded or shown
-  window.addEventListener('pageshow', function() {
-    removeElements();
-    startTimer(5000);
-  });
-
 </script><div class="chapter-nav">
 <div class="prev"><a href="quan-s%C3%A1t-sao-th%E1%BB%A7y-v%C3%A0-sao-kim.html"><span class="header-section-number">3</span> Quan sát Sao Thủy và Sao Kim</a></div>
 <div class="next"><a href="references.html">References</a></div>
@@ -487,7 +424,7 @@ window.onload = function() {
 <footer class="bg-primary text-light mt-5"><div class="container"><div class="row">
 
   <div class="col-12 col-md-6 mt-3">
-    <p>"<strong>Học thiên văn qua Stellarium</strong>" was written by Trần Trung Quân. It was last built on 2024-04-10.</p>
+    <p>"<strong>Học thiên văn qua Stellarium</strong>" was written by Trần Trung Quân. It was last built on 2024-05-05.</p>
   </div>
 
   <div class="col-12 col-md-6 mt-3">
