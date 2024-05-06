@@ -124,7 +124,7 @@ của Fomalhaut.
 
 ::: {.webex-box}
 **Câu hỏi 14**. Hai đường đó là?
-<div class='webex-radiogroup' id='radio_ZJSWPKFMZH'><label><input type="radio" autocomplete="off" name="radio_ZJSWPKFMZH" value=""></input> <span>đường thẳng (_Straight_) và đường chéo (_Diagonal_)</span></label><label><input type="radio" autocomplete="off" name="radio_ZJSWPKFMZH" value=""></input> <span>kinh tuyến trời (_Meridian_) và đường chân trời (_Horizon_)</span></label><label><input type="radio" autocomplete="off" name="radio_ZJSWPKFMZH" value="answer"></input> <span>xích đạo trời (_Celestial equator_) và hoàng đạo (_Ecliptic_)</span></label><label><input type="radio" autocomplete="off" name="radio_ZJSWPKFMZH" value=""></input> <span>xích đạo trời (_Celestial equator_) và kinh tuyến trời (_Meridian_)</span></label></div>
+<div class='webex-radiogroup' id='radio_VKVOHBLCTP'><label><input type="radio" autocomplete="off" name="radio_VKVOHBLCTP" value=""></input> <span>đường thẳng (_Straight_) và đường chéo (_Diagonal_)</span></label><label><input type="radio" autocomplete="off" name="radio_VKVOHBLCTP" value=""></input> <span>kinh tuyến trời (_Meridian_) và đường chân trời (_Horizon_)</span></label><label><input type="radio" autocomplete="off" name="radio_VKVOHBLCTP" value="answer"></input> <span>xích đạo trời (_Celestial equator_) và hoàng đạo (_Ecliptic_)</span></label><label><input type="radio" autocomplete="off" name="radio_VKVOHBLCTP" value=""></input> <span>xích đạo trời (_Celestial equator_) và kinh tuyến trời (_Meridian_)</span></label></div>
   
 
 **Câu hỏi 15**. Giao điểm của hai đường đó có xích kinh là:

@@ -30,9 +30,9 @@ Mục tiêu thứ hai là hiểu công thức và ghi nhớ Định luật thứ
 
 ---
 
-**H**. Tăng thời gian sao cho Sao Kim (*Mercury*) đi được một vòng (± 1 ngày) và điền vào cột *P (ngày)* và *P (năm)* trong Bảng \@ref(tab:kepler) (lấy số ngày chia cho 365,25).
+**H**. Tăng thời gian sao cho Sao Thủy (*Mercury*) đi được một vòng (± 1 ngày) và điền vào cột *P (ngày)* và *P (năm)* trong Bảng \@ref(tab:kepler) (lấy số ngày chia cho 365,25).
 
-**I**. Chỉnh lại ngày về 1/1/2024 (nếu muốn). Làm tương tự cho Sao Thủy (*Venus*).
+**I**. Chỉnh lại ngày về 1/1/2024 (nếu muốn). Làm tương tự cho Sao Kim (*Venus*).
 
 **J**. Phóng to trường nhìn lên khoảng 4-5º. Làm tương tự cho Sao Hỏa (*Mars*) (± 1 tháng, lấy số tháng chia cho 12 để điền vào cột *P (năm)*).
 
